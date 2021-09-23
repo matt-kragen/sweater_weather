@@ -1,24 +1,37 @@
-# README
+# Sweater Weather
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+> Sweater Weather is a 7-day project for Turing School's Back End Engineering Program
 
-Things you may want to cover:
+Table of Contents
+- [Sweater Weather](#sweater-weather)
+  - [Overview](#overview)
+  - [API Documentation](#api-documentation)
+  - [Features](#features)
+  - [Usage Examples](#usage-examples)
+  - [Tools Used](#tools-used)
+  - [Contributor](#contributor)
 
-* Ruby version
+## Overview
 
-* System dependencies
+## API Documentation
 
-* Configuration
+View documentation [here](./doc/api_documentation.md)
 
-* Database creation
+## Features
 
-* Database initialization
+## Usage Examples
 
-* How to run the test suite
+## Tools Used
+Unsplash?
 
-* Services (job queues, cache servers, search engines, etc.)
+| Development | Gems          | Testing       |
+|   :----:    |    :----:     |    :----:     |
+| Ruby 2.7.2  | Pry           | RSpec         |
+| Rails       | SimpleCov     |               |
+|             |               |               |
 
-* Deployment instructions
+## Contributor
 
-* ...
+👤  **Matt Kragen**
+- [GitHub](https://github.com/matt-kragen)
+- [LinkedIn](https://www.linkedin.com/in/mattkragen/)

@@ -2,14 +2,14 @@
 
 > Sweater Weather is a 7-day project for Turing School's Back End Engineering Program
 
-Table of Contents
-- [Sweater Weather](#sweater-weather)
-  - [Overview](#overview)
-  - [API Documentation](#api-documentation)
-  - [Features](#features)
-  - [Usage Examples](#usage-examples)
-  - [Tools Used](#tools-used)
-  - [Contributor](#contributor)
+### Table of Contents
+[Sweater Weather](#sweater-weather)
+[Overview](#overview)
+[API Documentation](#api-documentation)
+[Features](#features)
+[Usage Examples](#usage-examples)
+[Tools Used](#tools-used)
+[Contributor](#contributor)
 
 ## Overview
 

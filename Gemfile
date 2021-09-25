@@ -39,6 +39,8 @@ group :development, :test do
   gem 'pry'
   gem 'simplecov'
   gem 'rubocop-rails'
+  gem 'shoulda-matchers'
+  gem 'factory_bot_rails'
 end
 
 group :development do
@@ -48,7 +50,10 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
 
-group :test do; end
+group :test do
+  gem 'webmock'
+  gem 'vcr'
+end
 
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

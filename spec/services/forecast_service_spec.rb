@@ -13,7 +13,6 @@ RSpec.describe ForecastService do
       params = { location: 'denver,co' }
       location = GeocodeFacade.retrive_geocode(params[:location])
       forecast_response = ForecastService.call_forecast(location)
-  
     end
   end
 end

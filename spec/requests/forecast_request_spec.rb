@@ -1,27 +1,29 @@
 require 'rails_helper'
 
 RSpec.describe 'Weather API' do
-  it 'retrieves weather report based on city', :vcr do
-    get '/api/v1/forecast', params: {location: 'denver,co'}
+  it 'retrieves weather report based on city' do
+    get api_v1_forecast_index_path, params: {location: 'denver,co'}
     expect(response).to be_successful
+    expect(response.status).to eq(204)
 
     report = JSON.parse(response.body, symbolize_names: true)[:data]
     
-  #   expect(report).to have_key(:id)
-  #   expect(report[:id].class).to eq(String)
-  #   expect(report[:attributes]).to have_key(:current_temp)
-  #   expect(report[:attributes][:current_temp].class).to eq(Float)
-  #   expect(report[:attributes]).to have_key(:current_conditions)
-  #   expect(report[:attributes][:current_conditions].class).to eq(String)
-  #   expect(report[:attributes]).to have_key(:forecast)
-  #   expect(report[:attributes][:forecast].class).to eq(Array)
-  #   expect(report[:attributes][:forecast].count).to eq(2)
-  #   expect(report[:attributes][:forecast][0]).to have_key(:date)
-  #   expect(report[:attributes][:forecast][0][:date].class).to eq(String)
-  #   expect(report[:attributes][:forecast][0]).to have_key(:max_temp)
-  #   expect(report[:attributes][:forecast][0][:max_temp].class).to eq(Float)
-  #   expect(report[:attributes][:forecast][0]).to have_key(:min_temp)
-  #   expect(report[:attributes][:forecast][0][:min_temp].class).to eq(Float)
+    expect(report).to be_a Hash
+    expect(report).to have_key :data
+    expect(report[:data]).to be_a Hash
+    
+    expect(report[:data]).to have_key :id
+    expect(report[:data][:id]).to eq('null')
+    
+    expect(report[:data]).to have_key :type
+    expect(report[:data][:type]).to eq('forecast')
+    
+    expect(report[:data]).to have_key :attributes
+    expect(report[:data][:attributes]).to be_a Hash
+    expect(report[:data][:attributes]).to have_key :current_weather
+    expect(report[:data][:attributes]).to have_key :daily_weather
+    expect(report[:data][:attributes]).to have_key :hourly_weather
+    
   end
 
   # it 'sad path: params do not include location or days', :vcr do

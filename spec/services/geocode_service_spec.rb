@@ -12,8 +12,8 @@ RSpec.describe GeocodeService do
     describe '::get_geocode' do
       it 'returns geocode for a given location', :vcr do
         params = { location: 'denver,co' }
-        response = GeocodeService.get_geocode(params[:location])
-        require 'pry'; binding.pry
+        response = GeocodeService.call_geocode(params[:location])
+
         expect(response).to be_a(Hash)
         expect(response).to have_key(:info)
 

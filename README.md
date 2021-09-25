@@ -1,6 +1,6 @@
 # Sweater Weather
 
-> Sweater Weather is a 7-day project for Turing School's Back End Engineering Program
+> Sweater Weather is a 7-day solo project for Turing School's Back End Engineering Program
 
 ### Table of Contents
 - [Sweater Weather](#sweater-weather)

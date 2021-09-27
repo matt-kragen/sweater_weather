@@ -7,7 +7,7 @@ Rails.application.routes.draw do
       resources :users, only: [:post]
       resources :sessions, only: [:post]
       resources :road_trip, only: [:post]
-      resources :book_search, only: [:index]
+      resources :book_search, only: [:index], path: '/book-search'
     end
   end
 end

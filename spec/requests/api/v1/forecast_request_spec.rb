@@ -14,20 +14,24 @@ RSpec.describe 'Forecast API' do
       expect(report).to have_key(:data)
       expect(report[:data]).to be_a(Hash)
       
-      expect(report[:data].keys).to eq([
-        :id,
-        :type,
-        :attributes
-        ])
+      expect(report[:data].keys).to eq(
+        [
+          :id,
+          :type,
+          :attributes
+        ]
+      )
       expect(report[:data][:id]).to eq('null')
       expect(report[:data][:type]).to eq('forecast')
       
       expect(report[:data][:attributes]).to be_a(Hash)
-      expect(report[:data][:attributes].keys).to eq([
-        :current_weather,
-        :daily_weather,
-        :hourly_weather 
-      ])
+      expect(report[:data][:attributes].keys).to eq(
+        [
+          :current_weather,
+          :daily_weather,
+          :hourly_weather
+        ]
+      )
 
       # Current Weather
       expect(report[:data][:attributes][:current_weather].keys).to eq([
@@ -58,15 +62,17 @@ RSpec.describe 'Forecast API' do
       expect(report[:data][:attributes][:daily_weather].size).to eq(5)
       expect(report[:data][:attributes][:daily_weather][0]).to be_a(Hash)
       
-      expect(report[:data][:attributes][:daily_weather][0].keys).to eq([
-        :date,
-        :sunrise,
-        :sunset,
-        :max_temp,
-        :min_temp,
-        :conditions,
-        :icon
-      ])
+      expect(report[:data][:attributes][:daily_weather][0].keys).to eq(
+        [
+          :date,
+          :sunrise,
+          :sunset,
+          :max_temp,
+          :min_temp,
+          :conditions,
+          :icon
+        ]
+      )
       expect(report[:data][:attributes][:daily_weather][0][:date]).to be_a(String)
       expect(report[:data][:attributes][:daily_weather][0][:sunrise]).to be_a(String)
       expect(report[:data][:attributes][:daily_weather][0][:sunset]).to be_a(String)
@@ -80,12 +86,14 @@ RSpec.describe 'Forecast API' do
       expect(report[:data][:attributes][:hourly_weather].size).to eq(8)
       expect(report[:data][:attributes][:hourly_weather][0]).to be_a(Hash)
       
-      expect(report[:data][:attributes][:hourly_weather][0].keys).to eq([
-        :time,
-        :temp,
-        :conditions,
-        :icon
-        ])
+      expect(report[:data][:attributes][:hourly_weather][0].keys).to eq(
+        [
+          :time,
+          :temp,
+          :conditions,
+          :icon
+        ]
+      )
       expect(report[:data][:attributes][:hourly_weather][0][:time]).to be_a(String)
       expect(report[:data][:attributes][:hourly_weather][0][:temp]).to be_a(Numeric)
       expect(report[:data][:attributes][:hourly_weather][0][:conditions]).to be_a(String)

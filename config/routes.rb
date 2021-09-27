@@ -7,6 +7,7 @@ Rails.application.routes.draw do
       resources :users, only: [:post]
       resources :sessions, only: [:post]
       resources :road_trip, only: [:post]
+      resources :book_search, only: [:index]
     end
   end
 end

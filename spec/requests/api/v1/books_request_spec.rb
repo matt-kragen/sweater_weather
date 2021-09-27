@@ -3,10 +3,11 @@ require 'rails_helper'
 RSpec.describe "Books API" do
   describe 'happy path' do
     it 'returns a list of books for given destination', :vcr do
-      get api_v1_book_search_path, params: { location: 'denver, co', quantity: 15 }
+      params = { location: 'denver, co', quantity: 15 }
+      get api_v1_book_search_index_path(params)
 
       expect(response).to be_successful
-      expect(response.status).to eq(200)
+      expect(response.status).to eq(204)
   
       books = JSON.parse(response.body, symbolize_names: true)
 

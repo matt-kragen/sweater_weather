@@ -7,7 +7,7 @@ RSpec.describe "Books API" do
       get api_v1_book_search_index_path(params)
 
       expect(response).to be_successful
-      expect(response.status).to eq(204)
+      expect(response.status).to eq(200)
   
       books = JSON.parse(response.body, symbolize_names: true)
 
@@ -37,7 +37,7 @@ RSpec.describe "Books API" do
       expect(books[:data][:attributes][:forecast].keys).to eq([:summary, :temperature])
       expect(books[:data][:attributes][:forecast]).to be_a(Hash)
       expect(books[:data][:attributes][:forecast][:summary]).to be_a(String)
-      expect(books[:data][:attributes][:forecast][:temperature]).to be_a(String)
+      expect(books[:data][:attributes][:forecast][:temperature]).to be_a(Numeric)
 
       expect(books[:data][:attributes]).to have_key(:total_books_found)
       expect(books[:data][:attributes][:total_books_found]).to be_an(Integer)
@@ -48,7 +48,7 @@ RSpec.describe "Books API" do
       expect(books[:data][:attributes][:books][0]).to be_a(Hash)
       expect(books[:data][:attributes][:books][0].keys).to eq([:isbn, :title, :publisher])
       expect(books[:data][:attributes][:books][0][:isbn]).to be_an(Array)
-      expect(books[:data][:attributes][:books][0][:isbn][0]).to be_a(Numeric)
+      expect(books[:data][:attributes][:books][0][:isbn][0]).to be_a(String)
       expect(books[:data][:attributes][:books][0][:title]).to be_a(String)
       expect(books[:data][:attributes][:books][0][:publisher]).to be_an(Array)
       expect(books[:data][:attributes][:books][0][:publisher][0]).to be_a(String)

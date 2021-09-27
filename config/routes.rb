@@ -4,9 +4,9 @@ Rails.application.routes.draw do
     namespace :v1 do
       resources :forecast, only: [:index]
       resources :backgrounds, only: [:index]
-      resources :users
-      resources :sessions
-      resources :road_trip
+      resources :users, only: [:post]
+      resources :sessions, only: [:post]
+      resources :road_trip, only: [:post]
     end
   end
 end

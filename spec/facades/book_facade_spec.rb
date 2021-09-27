@@ -10,8 +10,8 @@ RSpec.describe BookFacade do
       quantity = 1
       
       book_query = BookFacade.get_books(location, quantity, coords)
-
-      expect(book).to be_a(BookQuery)
+      require 'pry'; binding.pry
+      expect(book_query).to be_a(BookQuery)
     end
   end
 end

@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe 'Forecast API' do
+RSpec.describe 'Forecast requests' do
   describe 'happy path' do
     it 'retrieves weather report based on city', :vcr do
       get api_v1_forecast_index_path, params: {location: 'denver,co'}

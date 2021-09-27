@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe "Background API" do
+RSpec.describe "Background requests" do
   describe 'happy path' do
     it 'returns a background image for given city', :vcr do
       get api_v1_backgrounds_path, params: {location: 'denver'}

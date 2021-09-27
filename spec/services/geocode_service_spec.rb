@@ -9,7 +9,7 @@ RSpec.describe GeocodeService do
   end
 
   describe 'class methods' do
-    describe '::get_geocode' do
+    describe '::call_geocode' do
       it 'returns geocode for a given location', :vcr do
         params = { location: 'denver,co' }
         response = GeocodeService.call_geocode(params[:location])

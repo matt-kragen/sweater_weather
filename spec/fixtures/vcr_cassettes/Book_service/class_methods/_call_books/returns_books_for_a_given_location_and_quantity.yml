@@ -1,0 +1,1962 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://openlibrary.org/search.json?limit=15&q=denver,co
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.8.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.18.0 (Ubuntu)
+      Date:
+      - Mon, 27 Sep 2021 15:43:40 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Method:
+      - GET, OPTIONS
+      Access-Control-Max-Age:
+      - '86400'
+      X-Ol-Stats:
+      - '"SR 1 0.206 TT 0 0.210"'
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+            "numFound": 35990,
+            "start": 0,
+            "numFoundExact": true,
+            "docs": [
+                {
+                    "key": "/works/OL8503198W",
+                    "text": [
+                        "/works/OL8503198W",
+                        "Denver, Co",
+                        "OL10909613M",
+                        "9780762507849",
+                        "0762507845",
+                        "Universal Map Enterprises",
+                        "OL2843451A",
+                        "Universal Map"
+                    ],
+                    "type": "work",
+                    "seed": [
+                        "/books/OL10909613M",
+                        "/works/OL8503198W",
+                        "/authors/OL2843451A"
+                    ],
+                    "title": "Denver, Co",
+                    "title_suggest": "Denver, Co",
+                    "has_fulltext": false,
+                    "edition_count": 1,
+                    "edition_key": [
+                        "OL10909613M"
+                    ],
+                    "publish_date": [
+                        "January 2001"
+                    ],
+                    "publish_year": [
+                        2001
+                    ],
+                    "first_publish_year": 2001,
+                    "isbn": [
+                        "9780762507849",
+                        "0762507845"
+                    ],
+                    "last_modified_i": 1338943517,
+                    "ebook_count_i": 0,
+                    "publisher": [
+                        "Universal Map Enterprises"
+                    ],
+                    "language": [
+                        "eng"
+                    ],
+                    "author_key": [
+                        "OL2843451A"
+                    ],
+                    "author_name": [
+                        "Universal Map"
+                    ],
+                    "publisher_facet": [
+                        "Universal Map Enterprises"
+                    ],
+                    "_version_": 1700720295581581317,
+                    "author_facet": [
+                        "OL2843451A Universal Map"
+                    ]
+                },
+                {
+                    "key": "/works/OL8808821W",
+                    "text": [
+                        "/works/OL8808821W",
+                        "University of Denver Co 2007",
+                        "OL8537031M",
+                        "150368610",
+                        "1427401683",
+                        "9781427401687",
+                        "College Prowler",
+                        "OL3010394A",
+                        "College Prowler"
+                    ],
+                    "type": "work",
+                    "seed": [
+                        "/books/OL8537031M",
+                        "/works/OL8808821W",
+                        "/authors/OL3010394A"
+                    ],
+                    "title": "University of Denver Co 2007",
+                    "title_suggest": "University of Denver Co 2007",
+                    "has_fulltext": false,
+                    "edition_count": 1,
+                    "edition_key": [
+                        "OL8537031M"
+                    ],
+                    "publish_date": [
+                        "July 1, 2006"
+                    ],
+                    "publish_year": [
+                        2006
+                    ],
+                    "first_publish_year": 2006,
+                    "oclc": [
+                        "150368610"
+                    ],
+                    "isbn": [
+                        "1427401683",
+                        "9781427401687"
+                    ],
+                    "last_modified_i": 1304171421,
+                    "ebook_count_i": 0,
+                    "cover_edition_key": "OL8537031M",
+                    "cover_i": 1847337,
+                    "publisher": [
+                        "College Prowler"
+                    ],
+                    "language": [
+                        "eng"
+                    ],
+                    "author_key": [
+                        "OL3010394A"
+                    ],
+                    "author_name": [
+                        "College Prowler"
+                    ],
+                    "id_goodreads": [
+                        "2985742"
+                    ],
+                    "publisher_facet": [
+                        "College Prowler"
+                    ],
+                    "_version_": 1700720648496611328,
+                    "author_facet": [
+                        "OL3010394A College Prowler"
+                    ]
+                },
+                {
+                    "key": "/works/OL4437736W",
+                    "text": [
+                        "/works/OL4437736W",
+                        "Denver Co Deluxe Flip Map",
+                        "OL10911511M",
+                        "9780762557363",
+                        "0762557362",
+                        "Universal Map Enterprises",
+                        "OL882946A",
+                        "Laura Ryder"
+                    ],
+                    "type": "work",
+                    "seed": [
+                        "/books/OL10911511M",
+                        "/works/OL4437736W",
+                        "/authors/OL882946A"
+                    ],
+                    "title": "Denver Co Deluxe Flip Map",
+                    "title_suggest": "Denver Co Deluxe Flip Map",
+                    "has_fulltext": false,
+                    "edition_count": 1,
+                    "edition_key": [
+                        "OL10911511M"
+                    ],
+                    "publish_date": [
+                        "January 2003"
+                    ],
+                    "publish_year": [
+                        2003
+                    ],
+                    "first_publish_year": 2003,
+                    "isbn": [
+                        "9780762557363",
+                        "0762557362"
+                    ],
+                    "last_modified_i": 1260838560,
+                    "ebook_count_i": 0,
+                    "publisher": [
+                        "Universal Map Enterprises"
+                    ],
+                    "language": [
+                        "eng"
+                    ],
+                    "author_key": [
+                        "OL882946A"
+                    ],
+                    "author_name": [
+                        "Laura Ryder"
+                    ],
+                    "publisher_facet": [
+                        "Universal Map Enterprises"
+                    ],
+                    "_version_": 1700714547654950913,
+                    "author_facet": [
+                        "OL882946A Laura Ryder"
+                    ]
+                },
+                {
+                    "key": "/works/OL19500062W",
+                    "text": [
+                        "/works/OL19500062W",
+                        "Photovoltaic safety, Denver, CO, 1988",
+                        "Photovoltaic safety.",
+                        "OL2061373M",
+                        "editor, Werner Luft.",
+                        "88042854",
+                        "Solar Energy Research Institute.",
+                        "Photovoltaics Safety Conference (2nd : 1988 : Denver, Colo.)",
+                        "Luft, Werner.",
+                        "9780883183663",
+                        "0883183668",
+                        "American Institute of Physics",
+                        "OL714790A",
+                        "Werner Luft",
+                        "Photovoltaic cells",
+                        "Safety measures",
+                        "Solar cells",
+                        "Congresses",
+                        "Design and construction"
+                    ],
+                    "type": "work",
+                    "seed": [
+                        "/books/OL2061373M",
+                        "/works/OL19500062W",
+                        "/subjects/photovoltaic_cells",
+                        "/subjects/safety_measures",
+                        "/subjects/solar_cells",
+                        "/subjects/congresses",
+                        "/subjects/design_and_construction",
+                        "/authors/OL714790A"
+                    ],
+                    "title": "Photovoltaic safety, Denver, CO, 1988",
+                    "title_suggest": "Photovoltaic safety, Denver, CO, 1988",
+                    "has_fulltext": false,
+                    "edition_count": 1,
+                    "edition_key": [
+                        "OL2061373M"
+                    ],
+                    "publish_date": [
+                        "1988"
+                    ],
+                    "publish_year": [
+                        1988
+                    ],
+                    "first_publish_year": 1988,
+                    "lccn": [
+                        "88042854"
+                    ],
+                    "publish_place": [
+                        "New York"
+                    ],
+                    "contributor": [
+                        "Solar Energy Research Institute.",
+                        "Photovoltaics Safety Conference (2nd : 1988 : Denver, Colo.)",
+                        "Luft, Werner."
+                    ],
+                    "lcc": [
+                        "TK-8322.00000000.P46 1988"
+                    ],
+                    "ddc": [
+                        "621.31244"
+                    ],
+                    "isbn": [
+                        "9780883183663",
+                        "0883183668"
+                    ],
+                    "last_modified_i": 1604827192,
+                    "ebook_count_i": 0,
+                    "cover_edition_key": "OL2061373M",
+                    "cover_i": 4745684,
+                    "publisher": [
+                        "American Institute of Physics"
+                    ],
+                    "language": [
+                        "eng"
+                    ],
+                    "author_key": [
+                        "OL714790A"
+                    ],
+                    "author_name": [
+                        "Werner Luft"
+                    ],
+                    "subject": [
+                        "Photovoltaic cells",
+                        "Safety measures",
+                        "Solar cells",
+                        "Congresses",
+                        "Design and construction"
+                    ],
+                    "id_goodreads": [
+                        "3793862"
+                    ],
+                    "publisher_facet": [
+                        "American Institute of Physics"
+                    ],
+                    "subject_facet": [
+                        "Congresses",
+                        "Design and construction",
+                        "Photovoltaic cells",
+                        "Safety measures",
+                        "Solar cells"
+                    ],
+                    "_version_": 1700705535019450369,
+                    "lcc_sort": "TK-8322.00000000.P46 1988",
+                    "author_facet": [
+                        "OL714790A Werner Luft"
+                    ],
+                    "subject_key": [
+                        "congresses",
+                        "design_and_construction",
+                        "photovoltaic_cells",
+                        "safety_measures",
+                        "solar_cells"
+                    ],
+                    "ddc_sort": "621.31244"
+                },
+                {
+                    "key": "/works/OL8541064W",
+                    "text": [
+                        "/works/OL8541064W",
+                        "Insight Fleximap Denver, CO (Insight Fleximaps)",
+                        "OL9197762M",
+                        "64038908",
+                        "9812582622",
+                        "9789812582621",
+                        "American Map Corporation",
+                        "OL2859862A",
+                        "American Map Corp"
+                    ],
+                    "type": "work",
+                    "seed": [
+                        "/books/OL9197762M",
+                        "/works/OL8541064W",
+                        "/authors/OL2859862A"
+                    ],
+                    "title": "Insight Fleximap Denver, CO (Insight Fleximaps)",
+                    "title_suggest": "Insight Fleximap Denver, CO (Insight Fleximaps)",
+                    "has_fulltext": false,
+                    "edition_count": 1,
+                    "edition_key": [
+                        "OL9197762M"
+                    ],
+                    "publish_date": [
+                        "January 30, 2006"
+                    ],
+                    "publish_year": [
+                        2006
+                    ],
+                    "first_publish_year": 2006,
+                    "oclc": [
+                        "64038908"
+                    ],
+                    "isbn": [
+                        "9812582622",
+                        "9789812582621"
+                    ],
+                    "last_modified_i": 1304090516,
+                    "ebook_count_i": 0,
+                    "cover_edition_key": "OL9197762M",
+                    "cover_i": 2302739,
+                    "publisher": [
+                        "American Map Corporation"
+                    ],
+                    "language": [
+                        "eng"
+                    ],
+                    "author_key": [
+                        "OL2859862A"
+                    ],
+                    "author_name": [
+                        "American Map Corp"
+                    ],
+                    "publisher_facet": [
+                        "American Map Corporation"
+                    ],
+                    "_version_": 1700720351972950018,
+                    "author_facet": [
+                        "OL2859862A American Map Corp"
+                    ]
+                },
+                {
+                    "key": "/works/OL8415118W",
+                    "text": [
+                        "/works/OL8415118W",
+                        "Five Points Neighborhood of Denver  (CO)",
+                        "OL7900786M",
+                        "47691535",
+                        "0738518700",
+                        "9780738518701",
+                        "After the Civil War, freed slaves came west from the south looking for work.",
+                        "Arcadia  Publishing (SC)",
+                        "OL2806763A",
+                        "Laura M. Mauck"
+                    ],
+                    "type": "work",
+                    "seed": [
+                        "/books/OL7900786M",
+                        "/works/OL8415118W",
+                        "/authors/OL2806763A"
+                    ],
+                    "title": "Five Points Neighborhood of Denver  (CO)",
+                    "title_suggest": "Five Points Neighborhood of Denver  (CO)",
+                    "has_fulltext": false,
+                    "edition_count": 1,
+                    "edition_key": [
+                        "OL7900786M"
+                    ],
+                    "publish_date": [
+                        "June 11, 2001"
+                    ],
+                    "publish_year": [
+                        2001
+                    ],
+                    "first_publish_year": 2001,
+                    "oclc": [
+                        "47691535"
+                    ],
+                    "isbn": [
+                        "0738518700",
+                        "9780738518701"
+                    ],
+                    "last_modified_i": 1303742645,
+                    "ebook_count_i": 0,
+                    "cover_edition_key": "OL7900786M",
+                    "cover_i": 1371298,
+                    "first_sentence": [
+                        "After the Civil War, freed slaves came west from the south looking for work."
+                    ],
+                    "publisher": [
+                        "Arcadia  Publishing (SC)"
+                    ],
+                    "language": [
+                        "eng"
+                    ],
+                    "author_key": [
+                        "OL2806763A"
+                    ],
+                    "author_name": [
+                        "Laura M. Mauck"
+                    ],
+                    "id_librarything": [
+                        "3305602"
+                    ],
+                    "publisher_facet": [
+                        "Arcadia  Publishing (SC)"
+                    ],
+                    "_version_": 1700720198950060033,
+                    "author_facet": [
+                        "OL2806763A Laura M. Mauck"
+                    ]
+                },
+                {
+                    "key": "/works/OL10910782M",
+                    "text": [
+                        "/works/OL10910782M",
+                        "Denver, Co Vicinity (City Wall Maps)",
+                        "OL10910782M",
+                        "0762538627",
+                        "9780762538621",
+                        "Universal Map Enterprises"
+                    ],
+                    "type": "work",
+                    "seed": [
+                        "/books/OL10910782M",
+                        "/works/OL10910782M"
+                    ],
+                    "title": "Denver, Co Vicinity (City Wall Maps)",
+                    "title_suggest": "Denver, Co Vicinity (City Wall Maps)",
+                    "has_fulltext": false,
+                    "edition_count": 1,
+                    "edition_key": [
+                        "OL10910782M"
+                    ],
+                    "publish_date": [
+                        "January 2001"
+                    ],
+                    "publish_year": [
+                        2001
+                    ],
+                    "first_publish_year": 2001,
+                    "isbn": [
+                        "0762538627",
+                        "9780762538621"
+                    ],
+                    "last_modified_i": 1621432771,
+                    "ebook_count_i": 0,
+                    "publisher": [
+                        "Universal Map Enterprises"
+                    ],
+                    "language": [
+                        "eng"
+                    ],
+                    "publisher_facet": [
+                        "Universal Map Enterprises"
+                    ],
+                    "_version_": 1700195490896805890
+                },
+                {
+                    "key": "/works/OL8415359W",
+                    "text": [
+                        "/works/OL8415359W",
+                        "Rails Around Denver (CO) (Images of Rail)",
+                        "OL7902353M",
+                        "2007923841",
+                        "154683075",
+                        "9780738548029",
+                        "0738548022",
+                        "Arcadia Publishing",
+                        "OL2807038A",
+                        "Allan C. Lewis",
+                        "Railroads",
+                        "Pictorial works",
+                        "History"
+                    ],
+                    "type": "work",
+                    "seed": [
+                        "/books/OL7902353M",
+                        "/works/OL8415359W",
+                        "/subjects/railroads",
+                        "/subjects/pictorial_works",
+                        "/subjects/history",
+                        "/authors/OL2807038A"
+                    ],
+                    "title": "Rails Around Denver (CO) (Images of Rail)",
+                    "title_suggest": "Rails Around Denver (CO) (Images of Rail)",
+                    "has_fulltext": false,
+                    "edition_count": 1,
+                    "edition_key": [
+                        "OL7902353M"
+                    ],
+                    "publish_date": [
+                        "July 9, 2007"
+                    ],
+                    "publish_year": [
+                        2007
+                    ],
+                    "first_publish_year": 2007,
+                    "lccn": [
+                        "2007923841"
+                    ],
+                    "oclc": [
+                        "154683075"
+                    ],
+                    "lcc": [
+                        "TF-0025.00000000.D427 L49 2007"
+                    ],
+                    "isbn": [
+                        "9780738548029",
+                        "0738548022"
+                    ],
+                    "last_modified_i": 1608419793,
+                    "ebook_count_i": 0,
+                    "cover_edition_key": "OL7902353M",
+                    "cover_i": 1373092,
+                    "publisher": [
+                        "Arcadia Publishing"
+                    ],
+                    "language": [
+                        "eng"
+                    ],
+                    "author_key": [
+                        "OL2807038A"
+                    ],
+                    "author_name": [
+                        "Allan C. Lewis"
+                    ],
+                    "subject": [
+                        "Railroads",
+                        "Pictorial works",
+                        "History"
+                    ],
+                    "id_goodreads": [
+                        "5918953"
+                    ],
+                    "id_librarything": [
+                        "5645277"
+                    ],
+                    "publisher_facet": [
+                        "Arcadia Publishing"
+                    ],
+                    "subject_facet": [
+                        "History",
+                        "Pictorial works",
+                        "Railroads"
+                    ],
+                    "_version_": 1700720108065783809,
+                    "lcc_sort": "TF-0025.00000000.D427 L49 2007",
+                    "author_facet": [
+                        "OL2807038A Allan C. Lewis"
+                    ],
+                    "subject_key": [
+                        "history",
+                        "pictorial_works",
+                        "railroads"
+                    ]
+                },
+                {
+                    "key": "/works/OL10910559M",
+                    "text": [
+                        "/works/OL10910559M",
+                        "Denver, Co (City & County Street Folding Maps)",
+                        "OL10910559M",
+                        "9780762532476",
+                        "0762532475",
+                        "Universal Map Enterprises"
+                    ],
+                    "type": "work",
+                    "seed": [
+                        "/books/OL10910559M",
+                        "/works/OL10910559M"
+                    ],
+                    "title": "Denver, Co (City & County Street Folding Maps)",
+                    "title_suggest": "Denver, Co (City & County Street Folding Maps)",
+                    "has_fulltext": false,
+                    "edition_count": 1,
+                    "edition_key": [
+                        "OL10910559M"
+                    ],
+                    "publish_date": [
+                        "January 2001"
+                    ],
+                    "publish_year": [
+                        2001
+                    ],
+                    "first_publish_year": 2001,
+                    "isbn": [
+                        "9780762532476",
+                        "0762532475"
+                    ],
+                    "last_modified_i": 1621432770,
+                    "ebook_count_i": 0,
+                    "publisher": [
+                        "Universal Map Enterprises"
+                    ],
+                    "language": [
+                        "eng"
+                    ],
+                    "publisher_facet": [
+                        "Universal Map Enterprises"
+                    ],
+                    "_version_": 1700195489381613568
+                },
+                {
+                    "key": "/works/OL1521395W",
+                    "text": [
+                        "/works/OL1521395W",
+                        "Infected wound therapy",
+                        "Infected wound therapy.",
+                        "OL243577M",
+                        "ca 34000846",
+                        "14722956",
+                        "OL161407A",
+                        "Denver chemical mfg. Co."
+                    ],
+                    "type": "work",
+                    "seed": [
+                        "/books/OL243577M",
+                        "/works/OL1521395W",
+                        "/authors/OL161407A"
+                    ],
+                    "title": "Infected wound therapy",
+                    "title_suggest": "Infected wound therapy",
+                    "has_fulltext": false,
+                    "edition_count": 1,
+                    "edition_key": [
+                        "OL243577M"
+                    ],
+                    "publish_date": [
+                        "1928"
+                    ],
+                    "publish_year": [
+                        1928
+                    ],
+                    "first_publish_year": 1928,
+                    "lccn": [
+                        "ca 34000846"
+                    ],
+                    "publish_place": [
+                        "[New York"
+                    ],
+                    "oclc": [
+                        "14722956"
+                    ],
+                    "lcc": [
+                        "RM-0671.00000000.A5 D4"
+                    ],
+                    "last_modified_i": 1604569115,
+                    "ebook_count_i": 0,
+                    "language": [
+                        "eng"
+                    ],
+                    "author_key": [
+                        "OL161407A"
+                    ],
+                    "author_name": [
+                        "Denver chemical mfg. Co."
+                    ],
+                    "_version_": 1700699613174956033,
+                    "lcc_sort": "RM-0671.00000000.A5 D4",
+                    "author_facet": [
+                        "OL161407A Denver chemical mfg. Co."
+                    ]
+                },
+                {
+                    "key": "/works/OL896607W",
+                    "text": [
+                        "/works/OL896607W",
+                        "Denver west, CO and Bailey, CO: Denver, CO",
+                        "39105, digital raster graphic data",
+                        "Denver west, CO and Bailey, CO: Denver, CO ",
+                        "OL10945157M",
+                        "9780607620054",
+                        "0607620056",
+                        "USGS Branch of Distribution",
+                        "OL79165A",
+                        "United States Geological Survey",
+                        "Geological Survey (U.S.)",
+                        "Geological Survey. (U.S.)",
+                        "United States. Geological survey.",
+                        "United States. Geological Survey",
+                        "United States. Geological Survey.",
+                        "Geological Survey (U. S.)",
+                        "Geological Survey (U.S.) 088",
+                        "U.S. Geological Survey",
+                        "Geological Survey (U .S.)"
+                    ],
+                    "type": "work",
+                    "seed": [
+                        "/books/OL10945157M",
+                        "/works/OL896607W",
+                        "/authors/OL79165A"
+                    ],
+                    "title": "Denver west, CO and Bailey, CO: Denver, CO",
+                    "title_suggest": "Denver west, CO and Bailey, CO: Denver, CO",
+                    "subtitle": "39105, digital raster graphic data",
+                    "has_fulltext": false,
+                    "edition_count": 1,
+                    "edition_key": [
+                        "OL10945157M"
+                    ],
+                    "publish_date": [
+                        "1996"
+                    ],
+                    "publish_year": [
+                        1996
+                    ],
+                    "first_publish_year": 1996,
+                    "isbn": [
+                        "9780607620054",
+                        "0607620056"
+                    ],
+                    "last_modified_i": 1272517172,
+                    "ebook_count_i": 0,
+                    "publisher": [
+                        "USGS Branch of Distribution"
+                    ],
+                    "language": [
+                        "eng"
+                    ],
+                    "author_key": [
+                        "OL79165A"
+                    ],
+                    "author_name": [
+                        "United States Geological Survey"
+                    ],
+                    "author_alternative_name": [
+                        "Geological Survey (U.S.)",
+                        "Geological Survey. (U.S.)",
+                        "United States. Geological survey.",
+                        "United States. Geological Survey",
+                        "United States. Geological Survey.",
+                        "Geological Survey (U. S.)",
+                        "Geological Survey (U.S.) 088",
+                        "U.S. Geological Survey",
+                        "Geological Survey (U .S.)"
+                    ],
+                    "publisher_facet": [
+                        "USGS Branch of Distribution"
+                    ],
+                    "_version_": 1700720896589692931,
+                    "author_facet": [
+                        "OL79165A United States Geological Survey"
+                    ]
+                },
+                {
+                    "key": "/works/OL7295649W",
+                    "text": [
+                        "/works/OL7295649W",
+                        "Oecd Economic Surveys",
+                        "OECD Economic Surveys",
+                        "Finland.",
+                        "United States.",
+                        "The Baltic States",
+                        "Norway",
+                        "Czech Republic.",
+                        "Poland.",
+                        "Italy 2000 (O E C D Economic Surveys Italy)",
+                        "Turkey, 1982",
+                        "United States 2002 (Oecd Economic Surveys)",
+                        "Sweden 2000-2001 (O E C D Economic Surveys Sweden)",
+                        "Switzerland (Oecd Economic Surveys)",
+                        "New Zealand (Oecd Economic Surveys, 3)",
+                        "Turkey 2001 (O E C D Economic Surveys Turkey)",
+                        "Finland 1999-2000 (O E C D Economic Surveys Finland)",
+                        "Germany 2001 (O E C D Economic Surveys Germany)",
+                        "Mexico (Oecd Economic Surveys)",
+                        "Austria 1998/1999 (O E C D Economic Surveys Austria)",
+                        "economic survey",
+                        "Japan 2002 (Oecd Economic Surveys)",
+                        "Spain 2000 (O E C D Economic Surveys Spain)",
+                        "Norway",
+                        "Brazil 2001 (Oecd Economic Surveys 2001 Issue 15)",
+                        "Japan 1998-1999 (O E C D Economic Surveys Japan)",
+                        "Ireland 2000-2001 (O E C D Economic Surveys Ireland)",
+                        "Poland 1996-1997 (O E C D Economic Surveys Poland)",
+                        "Federal Republic of Yugoslavia 2002 (Oecd Economic Surveys)",
+                        "Greece 2002 (Oecd Economic Surveys, 13)",
+                        "a regional economic assessment",
+                        "1998-1999 Italy (O E C D Economic Surveys Italy)",
+                        "Germany 2002 (OECD Economic Surveys)",
+                        "Iceland, 1981",
+                        "United States 2000-2001 (O E C D Economic Surveys United States)",
+                        "1997-1998 Poland (O E C D Economic Surveys Poland)",
+                        "United Kingdom 2003-2004 (Oecd Economic Surveys)",
+                        "Iceland (Oecd Economic Surveys)",
+                        "France, 1980",
+                        "Norway 2000-2001 (O E C D Economic Surveys Norway)",
+                        "Czech Republic - 2004 Issue 17 (Oecd Economic Surveys)",
+                        "Norway 2000 (O E C D Economic Surveys Norway)",
+                        "Austria 2000/2001 (O E C D Economic Surveys Austria)",
+                        "Poland 2000-2001 (O E C D Economic Surveys Poland)",
+                        "Canada 2000 (O E C D Economic Surveys Canada)",
+                        "Canada, 2003 (Oecd Economic Surveys)",
+                        "Mexico 2000 (O E C D Economic Surveys Mexico)",
+                        "Czech Republic 2000 (O E C D Economic Surveys Czech Republic)",
+                        "United States 1999-2000 (O E C D Economic Surveys United States)",
+                        "Denmark 2000 (O E C D Economic Surveys Denmark)",
+                        "Iceland 2000-2001 (O E C D Economic Surveys Iceland)",
+                        "Bulgaria 1997",
+                        "Italy 2001/2002 (O E C D Economic Surveys Italy)",
+                        "Norway 2002 (Oecd Economic Surveys)",
+                        "Poland 2000 (O E C D Economic Surveys Poland)",
+                        "Japan 1995-1996 (O E C D Economic Surveys Japan)",
+                        "Australia 2003 (Oecd Economic Surveys)",
+                        "Czech Republic 2000-2001 (O E C D Economic Surveys Czech Republic)",
+                        "France 1999-2000 (O E C D Economic Surveys France)",
+                        "Korea 2003 (Oecd Economic Surveys)",
+                        "Belgium 2001 (O E C D Economic Surveys Belgium-Luxembourg)",
+                        "The Baltic States. a Regional Economic Assessment 2000 (O E C D Economic Surveys the Baltic States)",
+                        "Portugal 2001 (O E C D Economic Surveys Portugal)",
+                        "Italy 1997",
+                        "Japan 1997-1998 (O E C D Economic Surveys Japan)",
+                        "Luxembourg  2003-Issue 15 (Oecd Economic Surveys)",
+                        "Yugoslavia, 1982",
+                        "Czech Republic 2003 (Oecd Economic Surveys)",
+                        "Japan 1999-2000 (O E C D Economic Surveys Japan)",
+                        "Norway 1996 1997 (O E C D Economic Surveys Norway)",
+                        "Switzerland 1999-2000 (O E C D Economic Surveys Switzerland)",
+                        "Belgium 2002 (Oecd Economic Surveys)",
+                        "Sweden 1999 (O E C D Economic Surveys Sweden)",
+                        "Finland 2003 (Oecd Economic Surveys)",
+                        "Portugal 1999 (O E C D Economic Surveys Portugal)",
+                        "Canada 2001 (O E C D Economic Surveys Canada)",
+                        "Spain, 1982",
+                        "Portugal, 1982",
+                        "Australia 1999-2000 (O E C D Economic Surveys Australia)",
+                        "Ireland 1998 - 1999 (O E C D Economic Surveys Ireland)",
+                        "Korea 2001 (O E C D Economic Surveys Korea)",
+                        "Australia 2000-2001 (O E C D Economic Surveys Australia)",
+                        "Finland 1998-1999 (O E C D Economic Surveys Finland)",
+                        "2000-2001 France (O E C D Economic Surveys France)",
+                        "New Zealand 2000 (O E C D Economic Surveys New Zealand)",
+                        "Spain 2003 (Oecd Economic Surveys)",
+                        "Sweden 2002 (Oecd Economic Surveys, 14)",
+                        "Portugal 2003 (Oecd Economic Surveys)",
+                        "OL12901820M",
+                        "OL13286300M",
+                        "OL13286299M",
+                        "OL13286298M",
+                        "OL12901824M",
+                        "OL13286297M",
+                        "OL12902325M",
+                        "OL22816791M",
+                        "OL12902362M",
+                        "OL12902321M",
+                        "OL12902351M",
+                        "OL12902361M",
+                        "OL12902425M",
+                        "OL12902495M",
+                        "OL12902430M",
+                        "OL12902507M",
+                        "OL22579024M",
+                        "OL12902504M",
+                        "OL12902503M",
+                        "OL12902510M",
+                        "OL12902508M",
+                        "OL12902600M",
+                        "OL12902586M",
+                        "OL12902589M",
+                        "OL22645786M",
+                        "OL12902592M",
+                        "OL12902597M",
+                        "OL22642051M",
+                        "OL22643872M",
+                        "OL12902583M",
+                        "OL22638533M",
+                        "OL12902595M",
+                        "OL12902596M",
+                        "OL12902512M",
+                        "OL22642047M",
+                        "OL12902587M",
+                        "OL12902584M",
+                        "OL12902736M",
+                        "OL12902738M",
+                        "OL12902775M",
+                        "OL12902739M",
+                        "OL12902582M",
+                        "OL12902740M",
+                        "OL12902776M",
+                        "OL12902688M",
+                        "OL12902814M",
+                        "OL12902753M",
+                        "OL12902585M",
+                        "OL12902735M",
+                        "OL12902771M",
+                        "OL12902816M",
+                        "OL12902741M",
+                        "OL12902774M",
+                        "OL12902581M",
+                        "OL12902773M",
+                        "OL12902812M",
+                        "OL12902591M",
+                        "OL12902772M",
+                        "OL12902783M",
+                        "OL12902782M",
+                        "OL12902778M",
+                        "OL12902601M",
+                        "OL12902785M",
+                        "OL12902784M",
+                        "OL12902590M",
+                        "OL12901661M",
+                        "OL12902875M",
+                        "OL12901689M",
+                        "OL12901656M",
+                        "OL12901636M",
+                        "OL12901642M",
+                        "OL12902868M",
+                        "OL12901696M",
+                        "OL12902867M",
+                        "OL12902869M",
+                        "OL12901697M",
+                        "OL12901652M",
+                        "OL12901648M",
+                        "OL12901653M",
+                        "OL12900825M",
+                        "OL12900815M",
+                        "OL12901722M",
+                        "OL12900730M",
+                        "OL12900818M",
+                        "OL12900554M",
+                        "Organisation for Economic Co-operation and Development. 1999-2000.",
+                        "51437118",
+                        "Organisation for Economic Co-operation and Development. Centre for Co-operation with Non-Members.",
+                        "Organisation for Economic Co-operation and Development.",
+                        "9789264196803",
+                        "9264160078",
+                        "9789264199651",
+                        "9789264199767",
+                        "9789264019812",
+                        "9264191461",
+                        "9264191380",
+                        "9264191410",
+                        "9264105883",
+                        "9789264159952",
+                        "9789264169883",
+                        "9789264103924",
+                        "9264099824",
+                        "9789264169692",
+                        "9264104399",
+                        "9789264175402",
+                        "9789264104358",
+                        "9789264199927",
+                        "9264120467",
+                        "9264169954",
+                        "9789992330289",
+                        "9789264175143",
+                        "9264199691",
+                        "9789264191556",
+                        "9789264105881",
+                        "9264191569",
+                        "9789264014886",
+                        "9264196692",
+                        "9789264191396",
+                        "9264169857",
+                        "9789264120464",
+                        "9789264099821",
+                        "926410044X",
+                        "9789264099425",
+                        "9789264175242",
+                        "9264101071",
+                        "9789264196858",
+                        "9264190252",
+                        "9264101675",
+                        "9789264191389",
+                        "9992330244",
+                        "9264191429",
+                        "9264100121",
+                        "9992330236",
+                        "9264191550",
+                        "9264154264",
+                        "9789992330265",
+                        "9789264154360",
+                        "9789264175259",
+                        "9264175342",
+                        "9264175199",
+                        "9789264007161",
+                        "9264175040",
+                        "9789264199699",
+                        "9789264186101",
+                        "9789264121355",
+                        "9264007164",
+                        "9789264154261",
+                        "9264169849",
+                        "9264186107",
+                        "9789264191402",
+                        "9789264175044",
+                        "9789264190214",
+                        "9264175407",
+                        "9264121358",
+                        "9264175016",
+                        "9264019812",
+                        "9789264101074",
+                        "9264169695",
+                        "926416992X",
+                        "9264153594",
+                        "9789264100121",
+                        "9789264175198",
+                        "9789264191570",
+                        "9264199659",
+                        "926417513X",
+                        "9789264190146",
+                        "9992330287",
+                        "926416989X",
+                        "9264175229",
+                        "9789264169852",
+                        "9264191364",
+                        "9264175415",
+                        "9264175261",
+                        "9264175318",
+                        "9264175032",
+                        "9789264169845",
+                        "9789264175020",
+                        "9264191577",
+                        "9264190104",
+                        "9789264104396",
+                        "9789992330241",
+                        "9789264190252",
+                        "9264159959",
+                        "9264196854",
+                        "9789264190108",
+                        "9264175326",
+                        "9264175024",
+                        "9789264175310",
+                        "9264190163",
+                        "9264190147",
+                        "9789264175327",
+                        "9789264191419",
+                        "9264199764",
+                        "9789264175013",
+                        "9264104356",
+                        "9264191399",
+                        "9789264100442",
+                        "9789264175228",
+                        "9789264160071",
+                        "9264190848",
+                        "926415437X",
+                        "9789264153417",
+                        "9789264196698",
+                        "9264175253",
+                        "9789264191464",
+                        "9789264101678",
+                        "9264099425",
+                        "9789264190849",
+                        "9264014888",
+                        "9264199926",
+                        "9789264175266",
+                        "9789264175341",
+                        "9789264153592",
+                        "9264175245",
+                        "9789264175419",
+                        "9264175148",
+                        "9264019677",
+                        "9264190317",
+                        "9789264190160",
+                        "9789264100756",
+                        "9264154361",
+                        "926410075X",
+                        "9789264191365",
+                        "9789264191563",
+                        "9789264175136",
+                        "9789264020221",
+                        "9264191402",
+                        "9789264154377",
+                        "9789264019676",
+                        "9789264190313",
+                        "9789264191426",
+                        "9789264169951",
+                        "9789264169890",
+                        "926419021X",
+                        "9264103929",
+                        "9264153411",
+                        "9789264175037",
+                        "9789264191600",
+                        "9789992330234",
+                        "9992330260",
+                        "9789264169920",
+                        "9264196803",
+                        "9264191607",
+                        "9264169881",
+                        "9264020225",
+                        "oecdeconomicsurv2003deve_260",
+                        "oecdeconomicsurv00deve_177",
+                        "oecdeconomicsurv00deve_809",
+                        "unitedstates19990000unse",
+                        "oecdeconomicsurv00deve_443",
+                        "oecdeconomicsurv00orga",
+                        "oecdeconomicsurv00deve_303",
+                        "oecdeconomicsurv00deve_527",
+                        "oecdeconomicsurv0000orga_i9t0",
+                        "oecdeconomicsurv2003deve",
+                        "oecdeconomicsurv0000orga_w9u4",
+                        "oecdeconomicsurv00deve_302",
+                        "oecdeconomicsurv00deve_433",
+                        "oecdeconomicsurv00deve_511",
+                        "oecdeconomicsurv00deve_822",
+                        "oecdeconomicsurv00deve_971",
+                        "oecdeconomicsurv00deve_295",
+                        "oecdeconomicsurv00deve_712",
+                        "oecdeconomicsurv00deve_760",
+                        "oecdeconomicsurv00deve_394",
+                        "Organisation for Economic Co-operation and Development",
+                        "Organization for Economic",
+                        "OECD",
+                        "Organization for Economic Cooperation & Devel",
+                        "Bernan Press",
+                        "Bernan Assoc",
+                        "European Conference of Ministers of Transport",
+                        "OL2139510A",
+                        "Organisation for Economic Co-operation and Development",
+                        "Organisation for Economic Co-operation and Development",
+                        "ORGANISATION FOR ECONOMIC COOPERATION AND DEVELOPMENT.",
+                        "Organisation for Economic Co-opertion and Development.",
+                        "Organisation For Economic Co-operation and Development.",
+                        "Organisation for Economic co-operation and Development.",
+                        "Organization for Economic Cooperation An",
+                        "Organization For Economic Cooperat OECD",
+                        "Organisation for Economic Co-operation andDevelopment.",
+                        "Organisation for Economic Co-operation and Development.",
+                        "Organisation for Economic Co-operation and Development Staff",
+                        "Organisation For Economic Co-Operation And Development.",
+                        "OECO (Organization for Economic Cooperat",
+                        "Organisation for economic cooperation and development.",
+                        "ORGANISATION FOR ECONOMIC CO-OPERATION AND DEVELOPMENT.",
+                        "OECD",
+                        "Organisation for Economic Cooperation and Development.",
+                        "Organisation for economic co-operation and development",
+                        "Organisation for Economic Cooperation and development.",
+                        "OCDE. Publie par : editions OCDE",
+                        "Oecd",
+                        "Organisation for economic co-operation and development.",
+                        "OCDE Staff",
+                        "ORGANISATION FOR ECONOMIC CO-OPERATION AND DEVELOPMENT",
+                        "Organisation for Economic Co-Operation and Development Staff",
+                        "Organisation for Economic Co-operation and development.",
+                        "Organization for Economic Cooperation &",
+                        "United States",
+                        "Economic Policy",
+                        "Organisation For Economic Co-operation and Development",
+                        "Economic Conditions",
+                        "Accessible book",
+                        "Protected DAISY"
+                    ],
+                    "type": "work",
+                    "seed": [
+                        "/books/OL12901820M",
+                        "/books/OL13286300M",
+                        "/books/OL13286299M",
+                        "/books/OL13286298M",
+                        "/books/OL12901824M",
+                        "/books/OL13286297M",
+                        "/books/OL12902325M",
+                        "/books/OL22816791M",
+                        "/books/OL12902362M",
+                        "/books/OL12902321M",
+                        "/books/OL12902351M",
+                        "/books/OL12902361M",
+                        "/books/OL12902425M",
+                        "/books/OL12902495M",
+                        "/books/OL12902430M",
+                        "/books/OL12902507M",
+                        "/books/OL22579024M",
+                        "/books/OL12902504M",
+                        "/books/OL12902503M",
+                        "/books/OL12902510M",
+                        "/books/OL12902508M",
+                        "/books/OL12902600M",
+                        "/books/OL12902586M",
+                        "/books/OL12902589M",
+                        "/books/OL22645786M",
+                        "/books/OL12902592M",
+                        "/books/OL12902597M",
+                        "/books/OL22642051M",
+                        "/books/OL22643872M",
+                        "/books/OL12902583M",
+                        "/books/OL22638533M",
+                        "/books/OL12902595M",
+                        "/books/OL12902596M",
+                        "/books/OL12902512M",
+                        "/books/OL22642047M",
+                        "/books/OL12902587M",
+                        "/books/OL12902584M",
+                        "/books/OL12902736M",
+                        "/books/OL12902738M",
+                        "/books/OL12902775M",
+                        "/books/OL12902739M",
+                        "/books/OL12902582M",
+                        "/books/OL12902740M",
+                        "/books/OL12902776M",
+                        "/books/OL12902688M",
+                        "/books/OL12902814M",
+                        "/books/OL12902753M",
+                        "/books/OL12902585M",
+                        "/books/OL12902735M",
+                        "/books/OL12902771M",
+                        "/books/OL12902816M",
+                        "/books/OL12902741M",
+                        "/books/OL12902774M",
+                        "/books/OL12902581M",
+                        "/books/OL12902773M",
+                        "/books/OL12902812M",
+                        "/books/OL12902591M",
+                        "/books/OL12902772M",
+                        "/books/OL12902783M",
+                        "/books/OL12902782M",
+                        "/books/OL12902778M",
+                        "/books/OL12902601M",
+                        "/books/OL12902785M",
+                        "/books/OL12902784M",
+                        "/books/OL12902590M",
+                        "/books/OL12901661M",
+                        "/books/OL12902875M",
+                        "/books/OL12901689M",
+                        "/books/OL12901656M",
+                        "/books/OL12901636M",
+                        "/books/OL12901642M",
+                        "/books/OL12902868M",
+                        "/books/OL12901696M",
+                        "/books/OL12902867M",
+                        "/books/OL12902869M",
+                        "/books/OL12901697M",
+                        "/books/OL12901652M",
+                        "/books/OL12901648M",
+                        "/books/OL12901653M",
+                        "/books/OL12900825M",
+                        "/books/OL12900815M",
+                        "/books/OL12901722M",
+                        "/books/OL12900730M",
+                        "/books/OL12900818M",
+                        "/books/OL12900554M",
+                        "/works/OL7295649W",
+                        "/subjects/united_states",
+                        "/subjects/economic_policy",
+                        "/subjects/organisation_for_economic_co-operation_and_development",
+                        "/subjects/economic_conditions",
+                        "/authors/OL2139510A"
+                    ],
+                    "title": "Oecd Economic Surveys",
+                    "title_suggest": "Oecd Economic Surveys",
+                    "has_fulltext": true,
+                    "edition_count": 85,
+                    "edition_key": [
+                        "OL12901820M",
+                        "OL13286300M",
+                        "OL13286299M",
+                        "OL13286298M",
+                        "OL12901824M",
+                        "OL13286297M",
+                        "OL12902325M",
+                        "OL22816791M",
+                        "OL12902362M",
+                        "OL12902321M",
+                        "OL12902351M",
+                        "OL12902361M",
+                        "OL12902425M",
+                        "OL12902495M",
+                        "OL12902430M",
+                        "OL12902507M",
+                        "OL22579024M",
+                        "OL12902504M",
+                        "OL12902503M",
+                        "OL12902510M",
+                        "OL12902508M",
+                        "OL12902600M",
+                        "OL12902586M",
+                        "OL12902589M",
+                        "OL22645786M",
+                        "OL12902592M",
+                        "OL12902597M",
+                        "OL22642051M",
+                        "OL22643872M",
+                        "OL12902583M",
+                        "OL22638533M",
+                        "OL12902595M",
+                        "OL12902596M",
+                        "OL12902512M",
+                        "OL22642047M",
+                        "OL12902587M",
+                        "OL12902584M",
+                        "OL12902736M",
+                        "OL12902738M",
+                        "OL12902775M",
+                        "OL12902739M",
+                        "OL12902582M",
+                        "OL12902740M",
+                        "OL12902776M",
+                        "OL12902688M",
+                        "OL12902814M",
+                        "OL12902753M",
+                        "OL12902585M",
+                        "OL12902735M",
+                        "OL12902771M",
+                        "OL12902816M",
+                        "OL12902741M",
+                        "OL12902774M",
+                        "OL12902581M",
+                        "OL12902773M",
+                        "OL12902812M",
+                        "OL12902591M",
+                        "OL12902772M",
+                        "OL12902783M",
+                        "OL12902782M",
+                        "OL12902778M",
+                        "OL12902601M",
+                        "OL12902785M",
+                        "OL12902784M",
+                        "OL12902590M",
+                        "OL12901661M",
+                        "OL12902875M",
+                        "OL12901689M",
+                        "OL12901656M",
+                        "OL12901636M",
+                        "OL12901642M",
+                        "OL12902868M",
+                        "OL12901696M",
+                        "OL12902867M",
+                        "OL12902869M",
+                        "OL12901697M",
+                        "OL12901652M",
+                        "OL12901648M",
+                        "OL12901653M",
+                        "OL12900825M",
+                        "OL12900815M",
+                        "OL12901722M",
+                        "OL12900730M",
+                        "OL12900818M",
+                        "OL12900554M"
+                    ],
+                    "publish_date": [
+                        "January 2003",
+                        "October 2001",
+                        "December 1981",
+                        "March 2003",
+                        "December 2001",
+                        "August 2002",
+                        "September 2003",
+                        "January 30, 2005",
+                        "July 2002",
+                        "December 1998",
+                        "1999",
+                        "January 3, 1997",
+                        "June 2001",
+                        "June 30, 2004",
+                        "December 2000",
+                        "June 1998",
+                        "June 1999",
+                        "October 2002",
+                        "February 2003",
+                        "1996",
+                        "March 2002",
+                        "May 2000",
+                        "April 30, 2004",
+                        "May 2003",
+                        "August 1999",
+                        "February 2001",
+                        "September 2002",
+                        "October 2003",
+                        "May 2001",
+                        "January 2004",
+                        "August 1981",
+                        "July 2000",
+                        "August 2001",
+                        "April 2003",
+                        "October 1998",
+                        "October 1982",
+                        "July 2001",
+                        "April 2, 1997",
+                        "September 2001",
+                        "November 18, 1996",
+                        "October 1999",
+                        "November 2001",
+                        "January 2001",
+                        "March 2001",
+                        "March 18, 1997",
+                        "February 2002",
+                        "December 1980",
+                        "January 2000",
+                        "April 2001",
+                        "2000",
+                        "April 15, 1997",
+                        "February 2000",
+                        "January 2002"
+                    ],
+                    "publish_year": [
+                        1982,
+                        2003,
+                        2002,
+                        1980,
+                        1998,
+                        1996,
+                        2001,
+                        1997,
+                        2000,
+                        2005,
+                        2004,
+                        1981,
+                        1999
+                    ],
+                    "first_publish_year": 1980,
+                    "publish_place": [
+                        "Paris"
+                    ],
+                    "oclc": [
+                        "51437118"
+                    ],
+                    "contributor": [
+                        "Organisation for Economic Co-operation and Development. Centre for Co-operation with Non-Members.",
+                        "Organisation for Economic Co-operation and Development."
+                    ],
+                    "isbn": [
+                        "9789264196803",
+                        "9264160078",
+                        "9789264199651",
+                        "9789264199767",
+                        "9789264019812",
+                        "9264191461",
+                        "9264191380",
+                        "9264191410",
+                        "9264105883",
+                        "9789264159952",
+                        "9789264169883",
+                        "9789264103924",
+                        "9264099824",
+                        "9789264169692",
+                        "9264104399",
+                        "9789264175402",
+                        "9789264104358",
+                        "9789264199927",
+                        "9264120467",
+                        "9264169954",
+                        "9789992330289",
+                        "9789264175143",
+                        "9264199691",
+                        "9789264191556",
+                        "9789264105881",
+                        "9264191569",
+                        "9789264014886",
+                        "9264196692",
+                        "9789264191396",
+                        "9264169857",
+                        "9789264120464",
+                        "9789264099821",
+                        "926410044X",
+                        "9789264099425",
+                        "9789264175242",
+                        "9264101071",
+                        "9789264196858",
+                        "9264190252",
+                        "9264101675",
+                        "9789264191389",
+                        "9992330244",
+                        "9264191429",
+                        "9264100121",
+                        "9992330236",
+                        "9264191550",
+                        "9264154264",
+                        "9789992330265",
+                        "9789264154360",
+                        "9789264175259",
+                        "9264175342",
+                        "9264175199",
+                        "9789264007161",
+                        "9264175040",
+                        "9789264199699",
+                        "9789264186101",
+                        "9789264121355",
+                        "9264007164",
+                        "9789264154261",
+                        "9264169849",
+                        "9264186107",
+                        "9789264191402",
+                        "9789264175044",
+                        "9789264190214",
+                        "9264175407",
+                        "9264121358",
+                        "9264175016",
+                        "9264019812",
+                        "9789264101074",
+                        "9264169695",
+                        "926416992X",
+                        "9264153594",
+                        "9789264100121",
+                        "9789264175198",
+                        "9789264191570",
+                        "9264199659",
+                        "926417513X",
+                        "9789264190146",
+                        "9992330287",
+                        "926416989X",
+                        "9264175229",
+                        "9789264169852",
+                        "9264191364",
+                        "9264175415",
+                        "9264175261",
+                        "9264175318",
+                        "9264175032",
+                        "9789264169845",
+                        "9789264175020",
+                        "9264191577",
+                        "9264190104",
+                        "9789264104396",
+                        "9789992330241",
+                        "9789264190252",
+                        "9264159959",
+                        "9264196854",
+                        "9789264190108",
+                        "9264175326",
+                        "9264175024",
+                        "9789264175310",
+                        "9264190163",
+                        "9264190147",
+                        "9789264175327",
+                        "9789264191419",
+                        "9264199764",
+                        "9789264175013",
+                        "9264104356",
+                        "9264191399",
+                        "9789264100442",
+                        "9789264175228",
+                        "9789264160071",
+                        "9264190848",
+                        "926415437X",
+                        "9789264153417",
+                        "9789264196698",
+                        "9264175253",
+                        "9789264191464",
+                        "9789264101678",
+                        "9264099425",
+                        "9789264190849",
+                        "9264014888",
+                        "9264199926",
+                        "9789264175266",
+                        "9789264175341",
+                        "9789264153592",
+                        "9264175245",
+                        "9789264175419",
+                        "9264175148",
+                        "9264019677",
+                        "9264190317",
+                        "9789264190160",
+                        "9789264100756",
+                        "9264154361",
+                        "926410075X",
+                        "9789264191365",
+                        "9789264191563",
+                        "9789264175136",
+                        "9789264020221",
+                        "9264191402",
+                        "9789264154377",
+                        "9789264019676",
+                        "9789264190313",
+                        "9789264191426",
+                        "9789264169951",
+                        "9789264169890",
+                        "926419021X",
+                        "9264103929",
+                        "9264153411",
+                        "9789264175037",
+                        "9789264191600",
+                        "9789992330234",
+                        "9992330260",
+                        "9789264169920",
+                        "9264196803",
+                        "9264191607",
+                        "9264169881",
+                        "9264020225"
+                    ],
+                    "last_modified_i": 1613957605,
+                    "ebook_count_i": 20,
+                    "ia": [
+                        "oecdeconomicsurv2003deve_260",
+                        "oecdeconomicsurv00deve_177",
+                        "oecdeconomicsurv00deve_809",
+                        "unitedstates19990000unse",
+                        "oecdeconomicsurv00deve_443",
+                        "oecdeconomicsurv00orga",
+                        "oecdeconomicsurv00deve_303",
+                        "oecdeconomicsurv00deve_527",
+                        "oecdeconomicsurv0000orga_i9t0",
+                        "oecdeconomicsurv2003deve",
+                        "oecdeconomicsurv0000orga_w9u4",
+                        "oecdeconomicsurv00deve_302",
+                        "oecdeconomicsurv00deve_433",
+                        "oecdeconomicsurv00deve_511",
+                        "oecdeconomicsurv00deve_822",
+                        "oecdeconomicsurv00deve_971",
+                        "oecdeconomicsurv00deve_295",
+                        "oecdeconomicsurv00deve_712",
+                        "oecdeconomicsurv00deve_760",
+                        "oecdeconomicsurv00deve_394"
+                    ],
+                    "public_scan_b": false,
+                    "ia_collection_s": "internetarchivebooks;inlibrary;universityofthewest-ol;printdisabled;china;librarygenesis",
+                    "lending_edition_s": "OL12902775M",
+                    "lending_identifier_s": "oecdeconomicsurv00orga",
+                    "printdisabled_s": "OL12902591M;OL12901636M;OL12902775M;OL12901696M;OL12901653M;OL12902582M;OL12902814M;OL12901642M;OL12900818M;OL12901656M;OL12901661M;OL12901652M;OL12902875M;OL12902816M;OL12901648M;OL12900825M;OL12900730M;OL12900815M;OL12901689M;OL12902785M",
+                    "cover_edition_key": "OL12902774M",
+                    "cover_i": 5223319,
+                    "publisher": [
+                        "Organisation for Economic Co-operation and Development",
+                        "Organization for Economic",
+                        "OECD",
+                        "Organization for Economic Cooperation & Devel",
+                        "Bernan Press",
+                        "Bernan Assoc",
+                        "European Conference of Ministers of Transport"
+                    ],
+                    "language": [
+                        "eng"
+                    ],
+                    "author_key": [
+                        "OL2139510A"
+                    ],
+                    "author_name": [
+                        "Organisation for Economic Co-operation and Development"
+                    ],
+                    "author_alternative_name": [
+                        "Organisation for Economic Co-operation and Development",
+                        "ORGANISATION FOR ECONOMIC COOPERATION AND DEVELOPMENT.",
+                        "Organisation for Economic Co-opertion and Development.",
+                        "Organisation For Economic Co-operation and Development.",
+                        "Organisation for Economic co-operation and Development.",
+                        "Organization for Economic Cooperation An",
+                        "Organization For Economic Cooperat OECD",
+                        "Organisation for Economic Co-operation andDevelopment.",
+                        "Organisation for Economic Co-operation and Development.",
+                        "Organisation for Economic Co-operation and Development Staff",
+                        "Organisation For Economic Co-Operation And Development.",
+                        "OECO (Organization for Economic Cooperat",
+                        "Organisation for economic cooperation and development.",
+                        "ORGANISATION FOR ECONOMIC CO-OPERATION AND DEVELOPMENT.",
+                        "OECD",
+                        "Organisation for Economic Cooperation and Development.",
+                        "Organisation for economic co-operation and development",
+                        "Organisation for Economic Cooperation and development.",
+                        "OCDE. Publie par : editions OCDE",
+                        "Oecd",
+                        "Organisation for economic co-operation and development.",
+                        "OCDE Staff",
+                        "ORGANISATION FOR ECONOMIC CO-OPERATION AND DEVELOPMENT",
+                        "Organisation for Economic Co-Operation and Development Staff",
+                        "Organisation for Economic Co-operation and development.",
+                        "Organization for Economic Cooperation &"
+                    ],
+                    "subject": [
+                        "United States",
+                        "Economic Policy",
+                        "Organisation For Economic Co-operation and Development",
+                        "Economic Conditions",
+                        "Accessible book",
+                        "Protected DAISY"
+                    ],
+                    "id_librarything": [
+                        "2957865"
+                    ],
+                    "ia_box_id": [
+                        "IA156201",
+                        "IA1923902",
+                        "IA1972109",
+                        "IA1923912"
+                    ],
+                    "publisher_facet": [
+                        "Bernan Assoc",
+                        "Bernan Press",
+                        "European Conference of Ministers of Transport",
+                        "OECD",
+                        "Organisation for Economic Co-operation and Development",
+                        "Organization for Economic",
+                        "Organization for Economic Cooperation & Devel"
+                    ],
+                    "subject_facet": [
+                        "Accessible book",
+                        "Economic Conditions",
+                        "Economic Policy",
+                        "Organisation For Economic Co-operation and Development",
+                        "Protected DAISY",
+                        "United States"
+                    ],
+                    "_version_": 1700718602445914112,
+                    "author_facet": [
+                        "OL2139510A Organisation for Economic Co-operation and Development"
+                    ],
+                    "subject_key": [
+                        "accessible_book",
+                        "economic_conditions",
+                        "economic_policy",
+                        "organisation_for_economic_co-operation_and_development",
+                        "protected_daisy",
+                        "united_states"
+                    ]
+                },
+                {
+                    "key": "/works/OL896605W",
+                    "text": [
+                        "/works/OL896605W",
+                        "Denver East, CO and Castle Rock, CO: Denver, CO",
+                        "39104, digital raster graphic data",
+                        "Denver East, CO and Castle Rock, CO: Denver, CO ",
+                        "OL10945156M",
+                        "0607620048",
+                        "9780607620047",
+                        "USGS Branch of Distribution",
+                        "OL79165A",
+                        "United States Geological Survey",
+                        "Geological Survey (U.S.)",
+                        "Geological Survey. (U.S.)",
+                        "United States. Geological survey.",
+                        "United States. Geological Survey",
+                        "United States. Geological Survey.",
+                        "Geological Survey (U. S.)",
+                        "Geological Survey (U.S.) 088",
+                        "U.S. Geological Survey",
+                        "Geological Survey (U .S.)"
+                    ],
+                    "type": "work",
+                    "seed": [
+                        "/books/OL10945156M",
+                        "/works/OL896605W",
+                        "/authors/OL79165A"
+                    ],
+                    "title": "Denver East, CO and Castle Rock, CO: Denver, CO",
+                    "title_suggest": "Denver East, CO and Castle Rock, CO: Denver, CO",
+                    "subtitle": "39104, digital raster graphic data",
+                    "has_fulltext": false,
+                    "edition_count": 1,
+                    "edition_key": [
+                        "OL10945156M"
+                    ],
+                    "publish_date": [
+                        "1996"
+                    ],
+                    "publish_year": [
+                        1996
+                    ],
+                    "first_publish_year": 1996,
+                    "isbn": [
+                        "0607620048",
+                        "9780607620047"
+                    ],
+                    "last_modified_i": 1272517172,
+                    "ebook_count_i": 0,
+                    "publisher": [
+                        "USGS Branch of Distribution"
+                    ],
+                    "language": [
+                        "eng"
+                    ],
+                    "author_key": [
+                        "OL79165A"
+                    ],
+                    "author_name": [
+                        "United States Geological Survey"
+                    ],
+                    "author_alternative_name": [
+                        "Geological Survey (U.S.)",
+                        "Geological Survey. (U.S.)",
+                        "United States. Geological survey.",
+                        "United States. Geological Survey",
+                        "United States. Geological Survey.",
+                        "Geological Survey (U. S.)",
+                        "Geological Survey (U.S.) 088",
+                        "U.S. Geological Survey",
+                        "Geological Survey (U .S.)"
+                    ],
+                    "publisher_facet": [
+                        "USGS Branch of Distribution"
+                    ],
+                    "_version_": 1700720895856738305,
+                    "author_facet": [
+                        "OL79165A United States Geological Survey"
+                    ]
+                },
+                {
+                    "key": "/works/OL9546062W",
+                    "text": [
+                        "/works/OL9546062W",
+                        "On Being Human",
+                        "OL11115233M",
+                        "9780873200042",
+                        "0873200047",
+                        "Soundworks",
+                        "OL3549597A",
+                        "Denver"
+                    ],
+                    "type": "work",
+                    "seed": [
+                        "/books/OL11115233M",
+                        "/works/OL9546062W",
+                        "/authors/OL3549597A"
+                    ],
+                    "title": "On Being Human",
+                    "title_suggest": "On Being Human",
+                    "has_fulltext": false,
+                    "edition_count": 1,
+                    "edition_key": [
+                        "OL11115233M"
+                    ],
+                    "publish_date": [
+                        "April 1985"
+                    ],
+                    "publish_year": [
+                        1985
+                    ],
+                    "first_publish_year": 1985,
+                    "isbn": [
+                        "9780873200042",
+                        "0873200047"
+                    ],
+                    "last_modified_i": 1341574325,
+                    "ebook_count_i": 0,
+                    "publisher": [
+                        "Soundworks"
+                    ],
+                    "author_key": [
+                        "OL3549597A"
+                    ],
+                    "author_name": [
+                        "Denver"
+                    ],
+                    "publisher_facet": [
+                        "Soundworks"
+                    ],
+                    "_version_": 1700721604436164610,
+                    "author_facet": [
+                        "OL3549597A Denver"
+                    ]
+                },
+                {
+                    "key": "/works/OL9546061W",
+                    "text": [
+                        "/works/OL9546061W",
+                        "John Denvers Greatest Hits",
+                        "OL13254648M",
+                        "9789991527932",
+                        "9991527931",
+                        "Hal Leonard",
+                        "OL3549597A",
+                        "Denver"
+                    ],
+                    "type": "work",
+                    "seed": [
+                        "/books/OL13254648M",
+                        "/works/OL9546061W",
+                        "/authors/OL3549597A"
+                    ],
+                    "title": "John Denvers Greatest Hits",
+                    "title_suggest": "John Denvers Greatest Hits",
+                    "has_fulltext": false,
+                    "edition_count": 1,
+                    "edition_key": [
+                        "OL13254648M"
+                    ],
+                    "publish_date": [
+                        "October 1987"
+                    ],
+                    "publish_year": [
+                        1987
+                    ],
+                    "first_publish_year": 1987,
+                    "isbn": [
+                        "9789991527932",
+                        "9991527931"
+                    ],
+                    "last_modified_i": 1260841008,
+                    "ebook_count_i": 0,
+                    "publisher": [
+                        "Hal Leonard"
+                    ],
+                    "author_key": [
+                        "OL3549597A"
+                    ],
+                    "author_name": [
+                        "Denver"
+                    ],
+                    "publisher_facet": [
+                        "Hal Leonard"
+                    ],
+                    "_version_": 1700721604484399105,
+                    "author_facet": [
+                        "OL3549597A Denver"
+                    ]
+                }
+            ],
+            "num_found": 35990,
+            "q": "denver,co",
+            "offset": null
+        }
+  recorded_at: Mon, 27 Sep 2021 15:43:41 GMT
+recorded_with: VCR 6.0.0

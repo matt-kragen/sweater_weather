@@ -10,23 +10,23 @@ describe 'Road Trip requests' do
           password_confirmation: 'fhtagn'
         }
         user = User.create(user_params)
-        
-        headers = { 'Accept' => 'application/json', 'Content-Type' => 'application/json'}
+
+        headers = { 'Accept' => 'application/json', 'Content-Type' => 'application/json' }
         params = {
-                  "origin": "Denver,CO",
-                  "destination": "Pueblo,CO",
-                  "api_key": "#{user.api_key}"
-                }
+          "origin": 'Denver,CO',
+          "destination": 'Pueblo,CO',
+          "api_key": user.api_key.to_s
+        }
         post api_v1_road_trip_index_path, headers: headers, params: params.to_json
-  
+
         expect(response).to be_successful
         expect(response.status).to eq(201)
         parsed_response = JSON.parse(response.body, symbolize_names: true)
-        
+
         expect(parsed_response).to be_a(Hash)
         expect(parsed_response[:data]).to be_a(Hash)
-        expect(parsed_response[:data].keys).to eq([:id, :type, :attributes])
-        
+        expect(parsed_response[:data].keys).to eq(%i[id type attributes])
+
         expect(parsed_response[:data][:type]).to eq('roadtrip')
         expect(parsed_response[:data][:id]).to be_a(String)
         expect(parsed_response[:data][:attributes]).to be_a(Hash)
@@ -41,20 +41,20 @@ describe 'Road Trip requests' do
           password_confirmation: 'fhtagn'
         }
         user = User.create(user_params)
-  
-        headers = { 'Accept' => 'application/json', 'Content-Type' => 'application/json'}
+
+        headers = { 'Accept' => 'application/json', 'Content-Type' => 'application/json' }
         params = {
-                  "origin": "Denver,CO",
-                  "destination": "Pueblo,CO",
-                  "api_key": "incorrectapikey"
-                }
+          "origin": 'Denver,CO',
+          "destination": 'Pueblo,CO',
+          "api_key": 'incorrectapikey'
+        }
 
         post api_v1_road_trip_index_path, headers: headers, params: params.to_json
-  
+
         expect(response).to_not be_successful
         expect(response.status).to eq(401)
 
-        expect(response.body).to eq()
+        expect(response.body).to eq
       end
     end
   end

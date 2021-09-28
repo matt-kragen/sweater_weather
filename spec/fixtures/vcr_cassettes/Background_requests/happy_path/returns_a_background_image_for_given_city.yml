@@ -1,0 +1,72 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.pexels.com/v1/search?orientation=landscape&per_page=1&query=denver
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.8.0
+      Authorization:
+      - 563492ad6f91700001000001439fab3fb375463fafd60ab64e930ad6
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 28 Sep 2021 02:32:48 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '439'
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 695990349a0031af-LAX
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - __cf_bm=Pd24y.qIhGOFuISJkd9n2RsYbAJelUWPI1CgD2Sf7N8-1632796368-0-AVYq/JZasZMvuu7BM6lw2qF/40XIm9wOLbGmU3wi5APS0YUqO9POvYiTVkGvYE8wyCDkp4hXUoVnoJGT75No+nY=;
+        path=/; expires=Tue, 28-Sep-21 03:02:48 GMT; domain=.pexels.com; HttpOnly;
+        Secure; SameSite=None
+      - __cf_bm=x_TgqsCrZ17Zb.jjmkkhr2DT5GwLtNnC1tTa77F7hm0-1632796368-0-Afi7qHYNyRCzZCkflT3WRJpLkcM0Blu1P2rxcZDYBwMMPAraaek+pEEnM+f8owceTuVeIS6NEwoupVJkKwLiYEs=;
+        path=/; expires=Tue, 28-Sep-21 03:02:48 GMT; domain=.pexels.com; HttpOnly;
+        Secure; SameSite=None
+      Vary:
+      - Origin, Accept-Encoding
+      Cf-Cache-Status:
+      - DYNAMIC
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443";
+        ma=86400
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Ratelimit-Limit:
+      - '20000'
+      X-Ratelimit-Remaining:
+      - '19984'
+      X-Ratelimit-Reset:
+      - '1635227046'
+      X-Request-Id:
+      - 3d9099a3-c48a-4fe0-b0ee-ca3fdaa37df6
+      X-Runtime:
+      - '0.082607'
+      X-Server:
+      - master
+      Server:
+      - cloudflare
+    body:
+      encoding: ASCII-8BIT
+      string: '{"page":1,"per_page":1,"photos":[{"id":2706750,"width":6240,"height":4160,"url":"https://www.pexels.com/photo/union-station-building-2706750/","photographer":"Thomas
+        Ward","photographer_url":"https://www.pexels.com/@thomasleeward","photographer_id":220769,"avg_color":"#777272","src":{"original":"https://images.pexels.com/photos/2706750/pexels-photo-2706750.jpeg","large2x":"https://images.pexels.com/photos/2706750/pexels-photo-2706750.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=2\u0026h=650\u0026w=940","large":"https://images.pexels.com/photos/2706750/pexels-photo-2706750.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=650\u0026w=940","medium":"https://images.pexels.com/photos/2706750/pexels-photo-2706750.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=350","small":"https://images.pexels.com/photos/2706750/pexels-photo-2706750.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=130","portrait":"https://images.pexels.com/photos/2706750/pexels-photo-2706750.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=1200\u0026w=800","landscape":"https://images.pexels.com/photos/2706750/pexels-photo-2706750.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=627\u0026w=1200","tiny":"https://images.pexels.com/photos/2706750/pexels-photo-2706750.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=1\u0026fit=crop\u0026h=200\u0026w=280"},"liked":false}],"total_results":42,"next_page":"https://api.pexels.com/v1/search/?orientation=landscape\u0026page=2\u0026per_page=1\u0026query=denver"}'
+  recorded_at: Tue, 28 Sep 2021 02:32:48 GMT
+recorded_with: VCR 6.0.0

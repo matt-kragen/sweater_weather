@@ -7,7 +7,7 @@ RSpec.describe Location do
         "results": [
           {
             "providedLocation": {
-              "location": "denver,co"
+              "location": 'denver,co'
             },
             "locations": [
               {

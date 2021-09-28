@@ -12,10 +12,10 @@ RSpec.describe Location do
       expect(image.images).to be_a(Hash)
       expect(image.images.keys.count).to eq(8)
       expect(image.credits).to eq({
-        pexels_credit: "Photo provided by Pexels",
-        pexels_link: "https://www.pexels.com",
-        photographer: "Thomas Ward"
-      })
+                                    pexels_credit: 'Photo provided by Pexels',
+                                    pexels_link: 'https://www.pexels.com',
+                                    photographer: 'Thomas Ward'
+                                  })
     end
   end
 end

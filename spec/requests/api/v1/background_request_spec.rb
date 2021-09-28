@@ -1,36 +1,36 @@
 require 'rails_helper'
 
-RSpec.describe "Background requests" do
+RSpec.describe 'Background requests' do
   describe 'happy path' do
     it 'returns a background image for given city', :vcr do
-      get api_v1_backgrounds_path, params: {location: 'denver'}
+      get api_v1_backgrounds_path, params: { location: 'denver' }
 
       expect(response).to be_successful
       expect(response.status).to eq(200)
-  
+
       background = JSON.parse(response.body, symbolize_names: true)
 
       expect(background).to be_a(Hash)
-      
+
       expect(background).to have_key(:data)
       expect(background[:data]).to be_a(Hash)
-      
+
       expect(background[:data].keys).to eq(
-        [
-          :id,
-          :type,
-          :attributes
+        %i[
+          id
+          type
+          attributes
         ]
       )
       expect(background[:data][:id]).to eq('null')
       expect(background[:data][:type]).to eq('image')
-      
+
       expect(background[:data][:attributes]).to be_a(Hash)
       expect(background[:data][:attributes].keys).to eq(
-        [
-          :url,
-          :images,
-          :credits
+        %i[
+          url
+          images
+          credits
         ]
       )
 
@@ -44,7 +44,7 @@ RSpec.describe "Background requests" do
 
   # describe 'sad path' do
   #   it '' do
-  
+
   #   end
   # end
 end

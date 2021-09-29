@@ -2,12 +2,16 @@ class Api::V1::RoadTripController < ApplicationController
   before_action :authenticate_api_key
 
   def create
-    render json: RoadtripSerializer.new(
-      RoadTripFacade.get_road_trip(road_trip_params)
+    render json: RoadTripSerializer.new(
+      RoadTripFacade.get_route(road_trip_params)
     ), status: :created
   end
 
   private
+
+  def road_trip_params
+    params.permit(:origin, :destination, :api_key)
+  end
 
   def authenticate_api_key
     current_user = User.find_by(api_key: params[:api_key])

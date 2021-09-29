@@ -4,7 +4,7 @@ class RoadTrip
               :travel_time,
               :weather_at_eta
 
-  def initialize(locations, route_info, weather_info)
+  def initialize(locations, route_info, weather_info=())
     @start_city = locations[:origin].titleize
     @end_city = locations[:destination].titleize
     @travel_time = route_info[:route][:formattedTime]

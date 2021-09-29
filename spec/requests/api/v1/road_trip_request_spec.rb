@@ -3,7 +3,7 @@ require 'rails_helper'
 describe 'Road Trip requests' do
   describe 'Road trip creation' do
     describe 'happy path' do
-      it 'can create road trip and return JSON response' do
+      it 'can create road trip and return JSON response', :vcr do
         user_params = {
           email: 'test@test.com',
           password: 'fhtagn',
@@ -27,14 +27,14 @@ describe 'Road Trip requests' do
         expect(parsed_response[:data]).to be_a(Hash)
         expect(parsed_response[:data].keys).to eq(%i[id type attributes])
 
-        expect(parsed_response[:data][:type]).to eq('roadtrip')
+        expect(parsed_response[:data][:type]).to eq('road_trip')
         expect(parsed_response[:data][:id]).to be_a(String)
         expect(parsed_response[:data][:attributes]).to be_a(Hash)
       end
     end
 
     describe 'sad path' do
-      xit 'displays 401 error if no API key given' do
+      it 'displays 401 error if no API key given' do
         user_params = {
           email: 'test@test.com',
           password: 'fhtagn',
@@ -53,8 +53,7 @@ describe 'Road Trip requests' do
 
         expect(response).to_not be_successful
         expect(response.status).to eq(401)
-
-        expect(response.body).to eq
+        expect(response.body.include?("Invalid API Key")).to eq(true)
       end
     end
   end

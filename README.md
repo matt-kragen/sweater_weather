@@ -51,14 +51,18 @@ In addition, this app allows for:
 ## Usage Examples
 
 ### Location-based Weather Forecast
+
 Endpoint: `GET  /api/v1/forecast?location=sandiego`
+
 Response:
 
 [![Screen-Shot-2021-09-29-at-12-12-23-AM.png](https://i.postimg.cc/cHvDPzFv/Screen-Shot-2021-09-29-at-12-12-23-AM.png)](https://postimg.cc/zb1SgxZN)
 
 
 ### New Road Trip with travel time and predictive weather forecast
+
 Endpoint: `POST /api/v1/road_trip`
+
 JSON Body:
 ```json
 {
@@ -67,6 +71,7 @@ JSON Body:
     "api_key": "[KEY]"
 }
 ```
+
 Response:
 
 [![Screen-Shot-2021-09-28-at-11-47-59-PM.png](https://i.postimg.cc/Gh9nHjxc/Screen-Shot-2021-09-28-at-11-47-59-PM.png)](https://postimg.cc/D8VMNLND)

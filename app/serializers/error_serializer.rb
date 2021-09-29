@@ -27,5 +27,12 @@ class ErrorSerializer
         "status": "Unsupported Media Type"
       }
     end
+    
+    def invalid_api_key
+      {
+        "message": "Invalid API Key",
+        "status": "Unauthorized"
+      }
+    end
   end
 end

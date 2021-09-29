@@ -7,8 +7,16 @@ class RoadTrip
   def initialize(locations, route_info, weather_info=())
     @start_city = locations[:origin].titleize
     @end_city = locations[:destination].titleize
-    @travel_time = route_info[:route][:formattedTime]
-    @weather_at_eta = predicted_weather(weather_info)
+    @travel_time = drivable?(route_info)
+    @weather_at_eta = predicted_weather(weather_info) unless @travel_time == "Impossible route"
+  end
+
+  def drivable?(route_info)
+    if route_info[:info][:statuscode] != 0
+      @travel_time = "Impossible route"
+    else
+      @travel_time = route_info[:route][:formattedTime]
+    end
   end
 
   def time_splitter

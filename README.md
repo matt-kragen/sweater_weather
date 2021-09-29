@@ -52,6 +52,7 @@ In addition, this app allows for:
 
 ### Location-based Weather Forecast
 Endpoint: `GET  /api/v1/forecast?location=sandiego`
+Response:
 
 [![Screen-Shot-2021-09-29-at-12-12-23-AM.png](https://i.postimg.cc/cHvDPzFv/Screen-Shot-2021-09-29-at-12-12-23-AM.png)](https://postimg.cc/zb1SgxZN)
 

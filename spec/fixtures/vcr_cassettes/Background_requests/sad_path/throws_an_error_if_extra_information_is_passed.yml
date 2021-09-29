@@ -1,0 +1,71 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.pexels.com/v1/search?orientation=landscape&per_page=1&query=denver,co
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.8.0
+      Authorization:
+      - 563492ad6f91700001000001439fab3fb375463fafd60ab64e930ad6
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 29 Sep 2021 03:42:54 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '484'
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 696234472afd429e-LAX
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - __cf_bm=LAtz5cQ_usYyXNxRxMlXSNqJz0yiCdh1LemHEQwbV24-1632886974-0-AcBeVUrch4+3GDU2HBMoxLwJwrSkCF7uky3/6/t/rMrzcnO5/ZFATJBig5PuhY9k3oPtMiy6Ip+X0VMw8uINKrY=;
+        path=/; expires=Wed, 29-Sep-21 04:12:54 GMT; domain=.pexels.com; HttpOnly;
+        Secure; SameSite=None
+      - __cf_bm=tx4qtcNjah2gvFe_iaru17rjcWaBAFX7vzk2zEVprsI-1632886974-0-Aeam0W4WZPLAg8GfoWSSnGG2XGhtCWwL/QHNTLq/7iHqd2J2rLOa8TOydjox4JFjme/17+qyMov86yGYYxaMlgU=;
+        path=/; expires=Wed, 29-Sep-21 04:12:54 GMT; domain=.pexels.com; HttpOnly;
+        Secure; SameSite=None
+      Vary:
+      - Origin, Accept-Encoding
+      Cf-Cache-Status:
+      - DYNAMIC
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443";
+        ma=86400
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Ratelimit-Limit:
+      - '20000'
+      X-Ratelimit-Remaining:
+      - '19981'
+      X-Ratelimit-Reset:
+      - '1635227046'
+      X-Request-Id:
+      - e565ff11-fd0b-4875-8ae8-4aff848c7537
+      X-Runtime:
+      - '0.083870'
+      X-Server:
+      - master
+      Server:
+      - cloudflare
+    body:
+      encoding: ASCII-8BIT
+      string: '{"page":1,"per_page":1,"photos":[{"id":7279335,"width":6720,"height":4480,"url":"https://www.pexels.com/photo/interracial-co-workers-having-fun-conversation-in-office-pantry-7279335/","photographer":"Anastasia  Shuraeva","photographer_url":"https://www.pexels.com/@anastasia-shuraeva","photographer_id":2441340,"avg_color":"#968B7C","src":{"original":"https://images.pexels.com/photos/7279335/pexels-photo-7279335.jpeg","large2x":"https://images.pexels.com/photos/7279335/pexels-photo-7279335.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=2\u0026h=650\u0026w=940","large":"https://images.pexels.com/photos/7279335/pexels-photo-7279335.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=650\u0026w=940","medium":"https://images.pexels.com/photos/7279335/pexels-photo-7279335.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=350","small":"https://images.pexels.com/photos/7279335/pexels-photo-7279335.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=130","portrait":"https://images.pexels.com/photos/7279335/pexels-photo-7279335.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=1200\u0026w=800","landscape":"https://images.pexels.com/photos/7279335/pexels-photo-7279335.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=627\u0026w=1200","tiny":"https://images.pexels.com/photos/7279335/pexels-photo-7279335.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=1\u0026fit=crop\u0026h=200\u0026w=280"},"liked":false}],"total_results":1475,"next_page":"https://api.pexels.com/v1/search/?orientation=landscape\u0026page=2\u0026per_page=1\u0026query=denver%2Cco"}'
+  recorded_at: Wed, 29 Sep 2021 03:42:54 GMT
+recorded_with: VCR 6.0.0

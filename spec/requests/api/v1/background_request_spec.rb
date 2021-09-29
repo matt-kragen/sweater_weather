@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.describe 'Background requests' do
   describe 'happy path' do
     it 'returns a background image for given city', :vcr do
-      get api_v1_backgrounds_path, params: { location: 'denver' }
+      get api_v1_backgrounds_path params: { location: 'denver' }
 
       expect(response).to be_successful
       expect(response.status).to eq(200)
@@ -42,9 +42,29 @@ RSpec.describe 'Background requests' do
     end
   end
 
-  # describe 'sad path' do
-  #   it '' do
+  describe 'sad path' do
+    it 'throws an error if params not included', :vcr do
+      get api_v1_backgrounds_path
+      expect(response).to_not be_successful
+      expect(response.status).to eq(400)
+      message = "Location must be present"
+      expect(response.body.include?(message)).to eq(true)
+    end
 
-  #   end
-  # end
+    it 'throws an error if params blank', :vcr do
+      get api_v1_backgrounds_path, params: {location: '' }
+      expect(response).to_not be_successful
+      expect(response.status).to eq(400)
+      message = "Location must be present"
+      expect(response.body.include?(message)).to eq(true)
+    end
+
+    it 'throws an error if extra information is passed', :vcr do
+      get api_v1_backgrounds_path, params: { location: 'denver,co', days: 5 }
+      expect(response).to_not be_successful
+      expect(response.status).to eq(400)
+      message = "Only location will be accepted"
+      expect(response.body.include?(message)).to eq(true)
+    end
+  end
 end

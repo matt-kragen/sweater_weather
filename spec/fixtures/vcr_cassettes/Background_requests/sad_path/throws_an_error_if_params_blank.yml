@@ -1,0 +1,71 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.pexels.com/v1/search?orientation=landscape&per_page=1&query=
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.8.0
+      Authorization:
+      - 563492ad6f91700001000001439fab3fb375463fafd60ab64e930ad6
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Date:
+      - Wed, 29 Sep 2021 03:42:54 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '44'
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 69623445a8ae0c9f-LAX
+      Cache-Control:
+      - no-cache
+      Set-Cookie:
+      - __cf_bm=4zPaSKXYLyJsbGGn20mbFwfKOoCafsVmSLk7uvLs6UE-1632886974-0-AXD39nahzLjFFVNjsQexMr0rrvTrEJ2iwhLVTqLCF+7QOPJrvCW6ZuItXH437mEmrnwav31Pfbjp1iu2KYNFJf4=;
+        path=/; expires=Wed, 29-Sep-21 04:12:54 GMT; domain=.pexels.com; HttpOnly;
+        Secure; SameSite=None
+      - __cf_bm=ArbajpBz33QAnLnnpjDqY_JXEKDi97UHKQu5Xi9Gi84-1632886974-0-AfGUGjn8qkBdIP+DmnG/Vwi+L7LC1jC92aZiqhNAKjkubM0aby93RKftr0DdKV+dPhO4LTnf2ueOiZEIUVR4Wgo=;
+        path=/; expires=Wed, 29-Sep-21 04:12:54 GMT; domain=.pexels.com; HttpOnly;
+        Secure; SameSite=None
+      Vary:
+      - Origin, Accept-Encoding
+      Cf-Cache-Status:
+      - DYNAMIC
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443";
+        ma=86400
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Ratelimit-Limit:
+      - '20000'
+      X-Ratelimit-Remaining:
+      - '19982'
+      X-Ratelimit-Reset:
+      - '1635227046'
+      X-Request-Id:
+      - 2b64bad5-94e9-49cf-9f13-d5c84975ee2c
+      X-Runtime:
+      - '0.005950'
+      X-Server:
+      - master
+      Server:
+      - cloudflare
+    body:
+      encoding: UTF-8
+      string: '{"status":400,"code":"No query param given"}'
+  recorded_at: Wed, 29 Sep 2021 03:42:54 GMT
+recorded_with: VCR 6.0.0

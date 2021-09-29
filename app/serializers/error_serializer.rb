@@ -13,5 +13,19 @@ class ErrorSerializer
         "status": "Bad Request"
       }
     end
+    
+    def invalid_credentials
+      {
+        "message": "Those credentials are invalid",
+        "status": "Unauthorized"
+      }
+    end
+    
+    def bad_format
+      {
+        "message": "Payload must be JSON format",
+        "status": "Unsupported Media Type"
+      }
+    end
   end
 end

@@ -93,21 +93,6 @@ describe 'Road Trip requests' do
         expect(parsed_response[:data][:attributes][:travel_time]).to eq("Impossible route")
         expect(parsed_response[:data][:attributes][:weather_at_eta]).to eq(nil)
       end
-
-      xit 'fails to create user without password' do
-        headers = { 'Accept' => 'application/json', 'Content-Type' => 'application/json' }
-        params = {
-          "email": "test@test.com",
-        }
-
-        post api_v1_users_path, headers: headers, params: params.to_json
-        expect(User.count).to eq(0)
-
-        expect(response).to_not be_successful
-        expect(response.status).to eq(401)
-        message = "Those credentials are invalid"
-        expect(response.body.include?(message)).to eq(true)
-      end
     end
   end
 end

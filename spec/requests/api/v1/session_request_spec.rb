@@ -54,9 +54,7 @@ describe 'Session requests' do
 
       it 'fails to login without email' do
         headers = { 'Accept' => 'application/json', 'Content-Type' => 'application/json' }
-        params = {
-          "password": 'fhtagn'
-        }
+        params = { "password": 'fhtagn' }
 
         post api_v1_sessions_path, headers: headers, params: params.to_json
 
@@ -68,9 +66,7 @@ describe 'Session requests' do
 
       it 'fails to login without password' do
         headers = { 'Accept' => 'application/json', 'Content-Type' => 'application/json' }
-        params = {
-          "email": "test@test.com"
-        }
+        params = { "email": "test@test.com" }
 
         post api_v1_sessions_path, headers: headers, params: params.to_json
 

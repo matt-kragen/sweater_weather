@@ -101,17 +101,23 @@ RSpec.describe 'Forecast requests' do
     end
   end
 
-  # describe 'sad path' do
-  #   it 'params do not include location or days', :vcr do
-  #     get '/api/v1/forecast'
-  #     expect(response).to_not be_successful
-  #     expect(response.status).to eq(400)
-  #   end
+  describe 'sad path' do
+    it 'throws an error if params not included', :vcr do
+      get api_v1_forecast_index_path
+      expect(response).to_not be_successful
+      expect(response.status).to eq(400)
+    end
 
-  #   it 'params are included but in correct format', :vcr do
-  #     get '/api/v1/forecast', params: {location: '', days: ''}
-  #     expect(response).to_not be_successful
-  #     expect(response.status).to eq(400)
-  #   end
-  # end
+    it 'throws an error if params blank', :vcr do
+      get api_v1_forecast_index_path, params: {location: '' }
+      expect(response).to_not be_successful
+      expect(response.status).to eq(400)
+    end
+
+    it 'throws an error if extra information is passed', :vcr do
+      get api_v1_forecast_index_path, params: { location: 'denver,co', days: 5 }
+      expect(response).to_not be_successful
+      expect(response.status).to eq(400)
+    end
+  end
 end

@@ -36,29 +36,5 @@ describe 'Session requests' do
         expect(parsed_response[:data][:attributes][:api_key]).to be_a(String)
       end
     end
-
-    describe 'sad path' do
-      xit 'displays 401 error if password incorrect' do
-        user_params = {
-          email: 'test@test.com',
-          password: 'fhtagn',
-          password_confirmation: 'fhtagn'
-        }
-        user = User.create(user_params)
-
-        headers = { 'Accept' => 'application/json', 'Content-Type' => 'application/json' }
-        params = {
-          "email": user.email.to_s,
-          "password": 'fhtag'
-        }
-
-        post api_v1_sessions_path, headers: headers, params: params.to_json
-
-        expect(response).to_not be_successful
-        expect(response.status).to eq(401)
-
-        expect(response.body).to eq
-      end
-    end
   end
 end

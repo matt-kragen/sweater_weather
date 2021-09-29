@@ -20,11 +20,12 @@
 ## Learning Goals
 
 This project was intended as an exercise to practice:
-- Exposing an API
+- Exposing API endpoints
 - Aggregating and exposing data from external APIs
 - API-based CRUD functionality
 - API key generation; token-based authentication
-- Building endpoints based on front end wireframes
+- Building endpoints based on front-end wireframes
+- Data manipulation; complex method implementation
 
 ## Features
 

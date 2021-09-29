@@ -40,61 +40,61 @@ describe 'User requests' do
         "password": 'fhtagn',
         "password_confirmation": 'fhtagn'
       }
-      
+
       post api_v1_users_path, headers: headers, params: params.to_json
       expect(User.count).to eq(0)
-      
+
       expect(response).to_not be_successful
       expect(response.status).to eq(401)
-      message = "Those credentials are invalid"
+      message = 'Those credentials are invalid'
       expect(response.body.include?(message)).to eq(true)
     end
-    
+
     it 'fails to create user without password' do
       headers = { 'Accept' => 'application/json', 'Content-Type' => 'application/json' }
       params = {
-        "email": "test@test.com",
+        "email": 'test@test.com'
       }
-      
+
       post api_v1_users_path, headers: headers, params: params.to_json
       expect(User.count).to eq(0)
-      
+
       expect(response).to_not be_successful
       expect(response.status).to eq(401)
-      message = "Those credentials are invalid"
+      message = 'Those credentials are invalid'
       expect(response.body.include?(message)).to eq(true)
     end
-    
+
     it 'fails to create user if password confirmation fails' do
       headers = { 'Accept' => 'application/json', 'Content-Type' => 'application/json' }
       params = {
-        "email": "test@test.com",
+        "email": 'test@test.com',
         "password": 'fhtagn',
         "password_confirmation": 'ngathf'
       }
-      
+
       post api_v1_users_path, headers: headers, params: params.to_json
       expect(User.count).to eq(0)
-      
+
       expect(response).to_not be_successful
       expect(response.status).to eq(401)
-      message = "Those credentials are invalid"
+      message = 'Those credentials are invalid'
       expect(response.body.include?(message)).to eq(true)
     end
-    
+
     it 'fails to create user if no JSON body is sent' do
       params = {
-        "email": "test@test.com",
+        "email": 'test@test.com',
         "password": 'fhtagn',
         "password_confirmation": 'fhtagn'
       }
-      
+
       post api_v1_users_path, params: params.to_json
       expect(User.count).to eq(0)
-      
+
       expect(response).to_not be_successful
       expect(response.status).to eq(415)
-      message = "Payload must be JSON format"
+      message = 'Payload must be JSON format'
       expect(response.body.include?(message)).to eq(true)
     end
   end

@@ -1,7 +1,7 @@
 class Api::V1::UsersController < ApplicationController
   def create
     user = User.create(user_params)
-    if request.headers[:CONTENT_TYPE] != "application/json"
+    if request.headers[:CONTENT_TYPE] != 'application/json'
       render json: ErrorSerializer.bad_format, status: :unsupported_media_type
     elsif user.valid?
       render json: UserSerializer.new(user), status: :created

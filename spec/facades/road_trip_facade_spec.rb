@@ -5,7 +5,7 @@ RSpec.describe RoadTripFacade do
     it 'creates RoadTrip object', :vcr do
       params = { origin: 'denver,co', destination: 'pueblo,co' }
       road_trip = RoadTripFacade.get_route(params)
-      
+
       expect(road_trip).to be_a(RoadTrip)
       expect(road_trip.start_city).to eq('Denver,Co')
       expect(road_trip.end_city).to eq('Pueblo,Co')

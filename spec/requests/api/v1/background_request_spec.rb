@@ -47,15 +47,15 @@ RSpec.describe 'Background requests' do
       get api_v1_backgrounds_path
       expect(response).to_not be_successful
       expect(response.status).to eq(400)
-      message = "Location must be present"
+      message = 'Location must be present'
       expect(response.body.include?(message)).to eq(true)
     end
 
     it 'throws an error if params blank', :vcr do
-      get api_v1_backgrounds_path, params: {location: '' }
+      get api_v1_backgrounds_path, params: { location: '' }
       expect(response).to_not be_successful
       expect(response.status).to eq(400)
-      message = "Location must be present"
+      message = 'Location must be present'
       expect(response.body.include?(message)).to eq(true)
     end
 
@@ -63,7 +63,7 @@ RSpec.describe 'Background requests' do
       get api_v1_backgrounds_path, params: { location: 'denver,co', days: 5 }
       expect(response).to_not be_successful
       expect(response.status).to eq(400)
-      message = "Only location will be accepted"
+      message = 'Only location will be accepted'
       expect(response.body.include?(message)).to eq(true)
     end
   end

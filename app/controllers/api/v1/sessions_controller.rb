@@ -3,7 +3,7 @@ class Api::V1::SessionsController < ApplicationController
     user = User.find_by(email: params[:email])
                .try(:authenticate, params[:password])
 
-    if request.headers[:CONTENT_TYPE] != "application/json"
+    if request.headers[:CONTENT_TYPE] != 'application/json'
       render json: ErrorSerializer.bad_format, status: :unsupported_media_type
     elsif user
       session[:user_id] = user.id

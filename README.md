@@ -1,6 +1,6 @@
 # Sweater Weather
 
-> Sweater Weather is a 7-day solo project for Turing School's Back End Engineering Program
+> Sweater Weather was a 7-day solo project for Turing School's Back End Engineering Program
 
 ### Table of Contents
 - [Sweater Weather](#sweater-weather)
@@ -15,23 +15,24 @@
 
 ## Overview
 
-*Sweater Weather* is a Rails API that provides the information necessary to build a front-end application with access to MapQuest routing features and OpenWeather forecasts associated with potential road trips.
+*Sweater Weather* is a Rails API that provides the information necessary to build a front-end application. It uses its access to MapQuest routing features and OpenWeather forecasts to provide a user with details about a potential road trip.
 
 ## Learning Goals
 
 This project was intended as an exercise to practice:
-- Exposing an API
+- Exposing API endpoints
 - Aggregating and exposing data from external APIs
 - API-based CRUD functionality
 - API key generation; token-based authentication
-- Building endpoints based on front end wireframes
+- Building endpoints based on front-end wireframes
+- Data manipulation; complex method implementation
 
 ## Features
 
-Upon registration with an email address, users are provided with a unique API key. This key can then be used to plan a road trip through MapQuest's Route service, combined with OpenWeather's Onecall service to view predicted weather at their selected destination.
+Upon registration with an email address, users are provided with a unique API key. This key can then be used to access the Road Trip endpoint. By combining MapQuest's Route service with OpenWeather's Onecall service, this application can display the travel time to a user's chosen destination along with the predicted weather forecast at their time/date of arrival.
 
 In addition, this app allows for:
-- Keyword-based forecast searches by location using MapQuest's Geocode service
+- Keyword-based forecast searches by location using OpenWeather's Onecall service
 - Keyword-based background image searches using Pexels's Image service
 - Session creation with user authentication
 - API-key authentication
@@ -43,14 +44,25 @@ In addition, this app allows for:
 |--------------------------------|------------------------------------------------|
 | Retrieve forecast for location | `GET  /api/v1/forecast?location={location}`    |
 | Retrieve background image      | `GET  /api/v1/backgrounds?location={location}` |
-| Create User                    | `POST /api/v1/users`                           |
-| Login User                     | `POST /api/v1/sessions`                        |
-| Create new Road Trip           | `POST /api/v1/road_trip`                       |
+| Create User                    | `POST /api/v1/users` (JSON body required)      |
+| Login User                     | `POST /api/v1/sessions` (JSON body required)   |
+| Create new Road Trip           | `POST /api/v1/road_trip` (JSON body required)  |
 
 ## Usage Examples
 
-New Road Trip with travel time and predictive weather forecast
+### Location-based Weather Forecast
+
+Endpoint: `GET  /api/v1/forecast?location=sandiego`
+
+Response:
+
+[![Screen-Shot-2021-09-29-at-12-12-23-AM.png](https://i.postimg.cc/cHvDPzFv/Screen-Shot-2021-09-29-at-12-12-23-AM.png)](https://postimg.cc/zb1SgxZN)
+
+
+### New Road Trip with travel time and predictive weather forecast
+
 Endpoint: `POST /api/v1/road_trip`
+
 JSON Body:
 ```json
 {
@@ -59,17 +71,24 @@ JSON Body:
     "api_key": "[KEY]"
 }
 ```
+
 Response:
+
 [![Screen-Shot-2021-09-28-at-11-47-59-PM.png](https://i.postimg.cc/Gh9nHjxc/Screen-Shot-2021-09-28-at-11-47-59-PM.png)](https://postimg.cc/D8VMNLND)
 
 ## Tools Used
-Unsplash?
 
-| Development | Gems          | Testing       |
-|   :----:    |    :----:     |    :----:     |
-| Ruby 2.7.2  | Pry           | RSpec         |
-| Rails       | SimpleCov     |               |
-| VSCode      | Faraday       |               |
+| Development   | Gems                | Testing          |
+|---------------|---------------------|------------------|
+| Ruby on Rails | Faraday             | RSpec            |
+| VSCode        | Pry                 | Postman          |
+| Git           | SimpleCov           | Shoulda-Matchers |
+| GitHub        | Factory Bot (Rails) | VCR              |
+|               | Rubocop (Rails)     | Webmock          |
+|               | Figaro              |                  |
+|               | FastJSON API        |                  |
+|               | BCrypt              |                  |
+
 
 ## How to Contribute
 
